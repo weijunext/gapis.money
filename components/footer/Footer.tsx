@@ -58,7 +58,7 @@ export default function Footer() {
   );
 
   return (
-    <footer className="flex w-full flex-col border-t">
+    <footer className="flex w-full flex-col border-t border-gray-600">
       <div className="max-w-7xl px-6 py-8 mt-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 md:pr-8">
