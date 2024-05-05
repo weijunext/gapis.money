@@ -4,12 +4,12 @@ import { MdEmail } from "react-icons/md";
 import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
 
 const baseSiteConfig = {
-  name: "Weekly Boilerplate",
+  name: "信息差——独立开发者出海周刊",
   description:
-    "Weekly Boilerplate is a carefully crafted weekly newsletter website template, implemented using Next.js + MDX.",
-  url: "https://weekly.weijunext.com",
+    "一个帮助独立开发者缩小信息差的技术周刊。",
+  url: "https://gapis.money",
   metadataBase: '/',
-  keywords: ["open-source weekly"],
+  keywords: ["信息差", "indie hacker", "独立开发者", "周刊", "独立开发者出海"],
   authors: [
     {
       name: "weijunext",
@@ -25,7 +25,7 @@ const baseSiteConfig = {
     apple: "/logo.png",
   },
   headerLinks: [
-    { name: 'repo', href: "https://github.com/weijunext/weekly-boilerplate", icon: BsGithub },
+    { name: 'repo', href: "https://github.com/weijunext/gapis.money", icon: BsGithub },
     { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
     { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee }
   ],
@@ -39,12 +39,12 @@ const baseSiteConfig = {
   ],
   footerProducts: [
     { url: 'https://weijunext.com/', name: 'J实验室' },
+    { url: 'https://gapis.money/', name: '独立开发者出海周刊' },
     { url: 'https://smartexcel.cc/', name: 'Smart Excel' },
     { url: 'https://weekly.weijunext.com/', name: 'Weekly Boilerplate' },
     { url: 'https://landingpage.weijunext.com/', name: 'Landing Page Boilerplate' },
     { url: 'https://nextjs.weijunext.com/', name: 'Next.js Practice' },
     { url: 'https://starter.weijunext.com/', name: 'Next.js Starter' },
-    { url: 'https://githubbio.com', name: 'Github Bio Generator' },
     { url: 'https://github.com/weijunext/indie-hacker-tools', name: 'Indie Hacker Tools' },
   ]
 }

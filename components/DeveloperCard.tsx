@@ -23,7 +23,7 @@ export default function DeveloperCard() {
               <Chip variant="flat">⛵️出海</Chip>
             </div>
             <p className="py-2 text-small text-foreground">
-              Next.js开源手艺人｜掘金签约作者｜出海鼓励师
+              Next.js开源手艺人｜掘金签约作者｜独立开发出海
             </p>
             <div className="w-full text-center mt-4 flex justify-evenly">
               <FollowButton
