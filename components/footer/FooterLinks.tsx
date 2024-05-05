@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const FooterLinks = () => {
-  const links = siteConfig.footerLinks;
+  const links = siteConfig.footerLinks || [];
 
   return (
     <div className="mx-auto flex flex-row items-center pb-2">
