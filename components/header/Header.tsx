@@ -11,7 +11,11 @@ const Header = ({ posts }: { posts: WeeklyPost[] }) => {
       <div className="mx-auto max-w-4xl px-4 py-3 border-b border-gray-600">
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href="/" className="flex items-center space-x-1 font-bold">
+            <Link
+              href="/"
+              className="flex items-center space-x-1 font-bold"
+              title={siteConfig.description}
+            >
               <Image
                 alt={siteConfig.name}
                 src="/logo.svg"
