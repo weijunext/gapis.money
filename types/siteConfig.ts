@@ -11,8 +11,9 @@ export type ProductLink = {
 }
 export type Link = {
   name: string
+  text?: string
   href: string
-  icon: IconType
+  icon?: IconType
 }
 export type ThemeColor = {
   media: string
