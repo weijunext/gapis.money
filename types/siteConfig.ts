@@ -28,8 +28,8 @@ export type SiteConfig = {
   creator: string
   ogImage?: string
   headerLinks: Link[]
-  footerLinks: Link[],
-  footerProducts: ProductLink[]
+  footerLinks?: Link[],
+  footerProducts?: ProductLink[]
   metadataBase: URL | string
   themeColors?: string | ThemeColor[]
   defaultNextTheme?: string

@@ -2,7 +2,7 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 const FooterProducts = () => {
-  const footerProducts = siteConfig.footerProducts;
+  const footerProducts = siteConfig.footerProducts || [];
 
   return (
     <div className="flex space-x-2 flex-wrap justify-center">

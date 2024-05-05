@@ -39,14 +39,14 @@ const baseSiteConfig = {
     { name: 'weChat', href: "https://weijunext.com/make-a-friend", icon: BsWechat }
   ],
   footerProducts: [
-    { url: 'https://weijunext.com/', name: 'J实验室' },
-    { url: 'https://gapis.money/', name: '独立开发者出海周刊' },
-    { url: 'https://smartexcel.cc/', name: 'Smart Excel' },
-    { url: 'https://weekly.weijunext.com/', name: 'Weekly Boilerplate' },
-    { url: 'https://landingpage.weijunext.com/', name: 'Landing Page Boilerplate' },
-    { url: 'https://nextjs.weijunext.com/', name: 'Next.js Practice' },
-    { url: 'https://starter.weijunext.com/', name: 'Next.js Starter' },
-    { url: 'https://github.com/weijunext/indie-hacker-tools', name: 'Indie Hacker Tools' },
+    // { url: 'https://weijunext.com/', name: 'J实验室' },
+    // { url: 'https://gapis.money/', name: '独立开发者出海周刊' },
+    // { url: 'https://smartexcel.cc/', name: 'Smart Excel' },
+    // { url: 'https://weekly.weijunext.com/', name: 'Weekly Boilerplate' },
+    // { url: 'https://landingpage.weijunext.com/', name: 'Landing Page Boilerplate' },
+    // { url: 'https://nextjs.weijunext.com/', name: 'Next.js Practice' },
+    // { url: 'https://starter.weijunext.com/', name: 'Next.js Starter' },
+    // { url: 'https://github.com/weijunext/indie-hacker-tools', name: 'Indie Hacker Tools' },
   ]
 }
 
