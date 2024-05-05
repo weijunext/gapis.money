@@ -10,6 +10,7 @@ import dayjs from "dayjs";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { IoIosLink } from "react-icons/io";
 
 type Props = {
   params: {
@@ -57,8 +58,23 @@ export default async function WeeklyDetailsPage({ params }: Props) {
         </article>
         <Separator className="my-12 bg-gray-600" />
         <div className="flex justify-between">
-          <div>发布时间：{dayjs(metadata.date).format("YYYY-MM-DD")}</div>
-          <div className="flex gap-2 flex-col sm:flex-row">
+          <div className="flex gap-2 flex-col lg:flex-row">
+            <div>发布时间：{dayjs(metadata.date).format("YYYY-MM-DD")}</div>
+            <Link
+              href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh-hans"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <span className="hidden lg:flex items-center">
+                版权声明
+                <IoIosLink className="hidden lg:flex" />
+              </span>
+              <span className="flex lg:hidden">
+                版权声明：CC BY-NC-ND 3.0 DEED
+              </span>
+            </Link>
+          </div>
+          <div className="flex gap-2 flex-col lg:flex-row">
             {prevPost ? (
               <Link href={prevPost.metadata.slug} className="link-underline">
                 上一篇
@@ -88,7 +104,7 @@ export default async function WeeklyDetailsPage({ params }: Props) {
         </div>
         <Comments />
       </div>
-      <div className="hidden md:flex flex-col justify-start md:w-1/5 pr-6">
+      <div className="hidden lg:flex flex-col justify-start lg:w-1/5 pr-6">
         <ArticleIndex />
       </div>
     </div>
