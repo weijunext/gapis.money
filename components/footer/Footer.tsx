@@ -11,7 +11,7 @@ const footerNavigation = {
     { name: "J实验室", href: "https://weijunext.com/" },
     { name: "Next.js Practice", href: "https://nextjs.weijunext.com/" },
   ],
-  openSource: [{ name: "Smart Excel", href: "https://smartexcel.cc/" }],
+  openSource: [{ name: "Smart Excel AI", href: "https://smartexcel.cc/" }],
   boilerplate: [
     { name: "Next.js Clean Starter", href: "https://starter.weijunext.com/" },
     {
@@ -42,11 +42,11 @@ export default function Footer() {
       items: { name: string; href: string }[];
     }) => (
       <div>
-        <h3 className="text-small font-semibold text-default-600">{title}</h3>
+        <h3 className="text-small font-semibold">{title}</h3>
         <ul className="mt-6 space-y-4">
           {items.map((item) => (
             <li key={item.name}>
-              <Link className="text-default-400" href={item.href} size="sm">
+              <Link className="text-default-500" href={item.href} size="sm">
                 {item.name}
               </Link>
             </li>
@@ -58,7 +58,7 @@ export default function Footer() {
   );
 
   return (
-    <footer className="flex w-full flex-col border-t border-gray-600">
+    <footer className="flex w-full flex-col border-t">
       <div className="max-w-7xl px-6 py-8 mt-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 md:pr-8">
