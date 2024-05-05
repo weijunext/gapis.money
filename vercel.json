@@ -1,0 +1,11 @@
+{
+  "routes": [
+    {
+      "src": "/",
+      "methods": [
+        "GET",
+        "POST"
+      ]
+    }
+  ]
+}
