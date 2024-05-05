@@ -130,3 +130,5 @@ dist
 
 public/json
 index.json
+
+.env.local
