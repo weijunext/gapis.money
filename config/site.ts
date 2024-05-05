@@ -25,7 +25,7 @@ const baseSiteConfig = {
     apple: "/logo.png",
   },
   headerLinks: [
-    { name: 'issues', text: '投稿', href: "https://github.com/weijunext/gapis.money/issues" },
+    { name: 'issues', text: '投稿⤴', href: "https://github.com/weijunext/gapis.money/issues" },
     // { name: 'repo', href: "https://github.com/weijunext/gapis.money", icon: BsGithub },
     { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
     // { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee }
