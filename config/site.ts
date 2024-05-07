@@ -6,7 +6,7 @@ import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
 const baseSiteConfig = {
   name: "信息差——独立开发者出海周刊",
   description:
-    "Knowledge is power, Gap is money!「信息差——独立开发者出海周刊」是一个帮助独立开发者缩小信息差的技术周刊。",
+    "Knowledge is power, info-gap is money!「信息差——独立开发者出海周刊」是一个帮助独立开发者缩小信息差的技术周刊。",
   url: "https://gapis.money",
   metadataBase: '/',
   keywords: ["信息差", "indie hacker", "独立开发者", "周刊", "独立开发者出海"],
