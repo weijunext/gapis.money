@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const ArticleIndex = () => {
+const TOC = () => {
   const [headings, setHeadings] = useState<
     { text: string; id: string; level: string }[]
   >([]);
@@ -37,4 +37,4 @@ const ArticleIndex = () => {
   );
 };
 
-export default ArticleIndex;
+export default TOC;
