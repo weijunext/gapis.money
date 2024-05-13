@@ -95,7 +95,10 @@ html {
   }
   body {
     @apply bg-background text-foreground;
-    font-family: "LXGW WenKai", sans-serif;
+    font-family: "LXGW WenKai",Helvetica,Tahoma,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    word-wrap: break-word;
   }
 }
 .link-hover {
