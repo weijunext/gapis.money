@@ -15,4 +15,4 @@
 
 ## 周刊历史
 
-2024-05-13 [第1期](https://gapis.money/weekly/2024-05-13_001)
+2024-05-13 [第1期：创意Showtime](https://gapis.money/weekly/2024-05-13_001)
