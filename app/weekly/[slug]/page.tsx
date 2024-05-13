@@ -11,11 +11,19 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { IoIosLink } from "react-icons/io";
+import remarkGfm from "remark-gfm";
 
 type Props = {
   params: {
     slug: string;
   };
+};
+
+const options = {
+  mdxOptions: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [],
+  },
 };
 
 export async function generateMetadata({ params }: Props) {
@@ -47,14 +55,18 @@ export default async function WeeklyDetailsPage({ params }: Props) {
   const { content, metadata } = post;
 
   return (
-    <div className="flex flex-row w-full pt-12">
-      <aside className="hidden md:block md:w-1/5 pl-6 max-h-[100vh] h-full overflow-auto sticky top-0 left-0">
+    <div className="flex flex-row w-full pt-6">
+      <aside className="hidden md:block md:w-1/5 pl-6 max-h-[100vh] h-full overflow-auto sticky top-6 left-0 mt-6">
         <WeeklyList isSide posts={posts} />
       </aside>
       <div className="w-full md:w-3/5 px-6">
         <article id={`article`}>
           <h1>{metadata.title}</h1>
-          <MDXRemote source={content} components={MDXComponents} />
+          <MDXRemote
+            source={content}
+            components={MDXComponents}
+            options={options}
+          />
         </article>
         <Separator className="my-12 bg-gray-600" />
         <div className="flex justify-between">

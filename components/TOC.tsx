@@ -24,7 +24,7 @@ const TOC = () => {
 
   return (
     <>
-      <ul className="sticky top-0 right-0">
+      <ul className="sticky top-6 right-0 mt-6">
         {headings.map(({ text, id, level }) => (
           <li key={id} className={`my-2 ${level === "H3" ? "ml-4" : ""}`}>
             <Link href={`#${id}`} className="link-hover">

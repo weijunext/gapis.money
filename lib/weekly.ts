@@ -19,7 +19,7 @@ export async function getWeeklyPosts(): Promise<{ posts: WeeklyPost[]; postsByMo
 
       return {
         id: month,
-        metadata: data, // slug/url title date
+        metadata: data, // { slug/url title date }
         title: data.title,
         slug: data.slug,
         content,
