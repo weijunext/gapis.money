@@ -59,7 +59,7 @@ export default async function WeeklyDetailsPage({ params }: Props) {
       <aside className="hidden md:block md:w-1/5 pl-6 max-h-[100vh] h-full overflow-auto sticky top-6 left-0 mt-6">
         <WeeklyList isSide posts={posts} />
       </aside>
-      <div className="w-full md:w-3/5 px-6">
+      <div className="w-full md:w-3/5 px-12">
         <article id={`article`}>
           <h1>{metadata.title}</h1>
           <MDXRemote
