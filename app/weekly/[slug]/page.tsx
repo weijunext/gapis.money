@@ -1,7 +1,7 @@
 import Comments from "@/components/Comments";
-import MDXComponents from "@/components/MDXComponents";
 import TOC from "@/components/TOC";
 import WeeklyList from "@/components/WeeklyList";
+import MDXComponents from "@/components/mdx/MDXComponents";
 import { Separator } from "@/components/ui/separator";
 import { siteConfig } from "@/config/site";
 import { getWeeklyPosts } from "@/lib/weekly";
