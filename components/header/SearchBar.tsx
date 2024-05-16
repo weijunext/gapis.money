@@ -79,9 +79,9 @@ const SearchBar = ({ posts }: { posts: WeeklyPost[] }) => {
         onFocus={() => {
           setShow(true);
         }}
-        // onBlur={() => {
-        //   setShow(false);
-        // }}
+        onBlur={() => {
+          setShow(false);
+        }}
         placeholder="Search……"
         className="border-gray-600 focus:border-0"
       />
