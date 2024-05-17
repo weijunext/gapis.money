@@ -55,6 +55,7 @@ const MDXComponents: MDXComponentsProps = {
       {...props}
     />
   ),
+  hr: (props) => <hr className="border-t border-gray-600" {...props} />,
   p: (props) => <p className="mt-4 mb-4" {...props} />,
   a: (props) => (
     <a
@@ -82,7 +83,9 @@ const MDXComponents: MDXComponentsProps = {
       {...props}
     />
   ),
-  img: (props) => <img className="rounded border-4 border-main" {...props} />,
+  img: (props) => (
+    <img width="70%" className="rounded border-4 border-main" {...props} />
+  ),
   strong: (props) => <strong className="font-bold" {...props} />,
   table: (props) => (
     <div className="my-6 w-full overflow-x-auto">
