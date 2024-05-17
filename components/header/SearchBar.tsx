@@ -83,7 +83,7 @@ const SearchBar = ({ posts }: { posts: WeeklyPost[] }) => {
           setShow(false);
         }}
         placeholder="Search……"
-        className="border-gray-600 focus:border-0"
+        className="border-gray-600 focus:border-0 rounded-full"
       />
 
       <Transition
