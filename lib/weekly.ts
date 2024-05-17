@@ -1,3 +1,4 @@
+import { getCachedPosts, setCachedPosts } from '@/lib/cache';
 import { PostsByMonth, WeeklyPost } from '@/types/weekly';
 import dayjs from 'dayjs';
 import fs from 'fs';
@@ -5,6 +6,11 @@ import matter from 'gray-matter';
 import path from 'path';
 
 export async function getWeeklyPosts(): Promise<{ posts: WeeklyPost[]; postsByMonth: PostsByMonth }> {
+  const cache = getCachedPosts();
+  if (cache.posts && cache.postsByMonth) {
+    return { posts: cache.posts, postsByMonth: cache.postsByMonth };
+  }
+
   const postsDirectory = path.join(process.cwd(), 'content')
   let filenames = await fs.promises.readdir(postsDirectory)
   filenames = filenames.reverse()
@@ -37,6 +43,10 @@ export async function getWeeklyPosts(): Promise<{ posts: WeeklyPost[]; postsByMo
     return acc;
   }, {});
 
+  setCachedPosts({
+    posts,
+    postsByMonth
+  });
   return {
     posts,
     postsByMonth

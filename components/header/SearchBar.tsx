@@ -1,23 +1,18 @@
 "use client";
 import { Input } from "@/components/ui/input";
-import { createIndex } from "@/lib/loadIndex";
-import { doSearch } from "@/lib/search";
 import { cn } from "@/lib/utils";
 import { SearchResult } from "@/types/search";
-import { WeeklyPost } from "@/types/weekly";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
 import { useCallback, useState } from "react";
 import { HighlightMatches } from "./HighlightMatches";
 
-const SearchBar = ({ posts }: { posts: WeeklyPost[] }) => {
+const SearchBar = () => {
   const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState("");
   const [show, setShow] = useState(false);
   const [error, setError] = useState(false);
   const [results, setResults] = useState<SearchResult[]>([]);
-
-  createIndex({ documents: posts });
 
   /**
    * 处理搜索输入的变化
@@ -58,8 +53,11 @@ const SearchBar = ({ posts }: { posts: WeeklyPost[] }) => {
    * @param value 搜索关键词 The search keyword
    */
   const handleSearch = async (value: string) => {
-    const searchResults: SearchResult[] = await doSearch(value);
-    setResults(searchResults);
+    // const searchResults: SearchResult[] = await doSearch(value);
+    // setResults(searchResults);
+    const response = await fetch(`/api/search?query=${value}`);
+    const data = await response.json();
+    setResults(data.results);
   };
 
   /**
@@ -116,7 +114,7 @@ const SearchBar = ({ posts }: { posts: WeeklyPost[] }) => {
               <Link
                 key={`${result.id}_${index}`}
                 // get the right url
-                href={`/weekly/${result.id.split("_")[0]}`}
+                href={`/article/${result.id.split("_")[0]}`}
                 onClick={finishSearch}
               >
                 <li

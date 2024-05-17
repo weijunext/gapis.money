@@ -5,10 +5,8 @@ import Header from "@/components/header/Header";
 import { TailwindIndicator } from "@/components/theme/TailwindIndicator";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import { siteConfig } from "@/config/site";
-import { getWeeklyPosts } from "@/lib/weekly";
 import "@/styles/globals.css";
 import "@/styles/loading.css";
-import { PostsByMonth, WeeklyPost } from "@/types/weekly";
 import { Analytics } from "@vercel/analytics/react";
 import { Viewport } from "next";
 
@@ -26,9 +24,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const { posts }: { posts: WeeklyPost[]; postsByMonth: PostsByMonth } =
-    await getWeeklyPosts();
-
+  // await createIndex();
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
@@ -39,7 +35,7 @@ export default async function RootLayout({
           defaultTheme={siteConfig.defaultNextTheme}
           forcedTheme={siteConfig.defaultNextTheme}
         >
-          <Header posts={posts} />
+          <Header />
           <main className="flex flex-col items-center py-6">{children}</main>
           <Footer />
           <Analytics />

@@ -1,24 +1,28 @@
 import { stripMarkdown } from "@/lib/search";
-import { WeeklyPost } from "@/types/weekly";
+import { getWeeklyPosts } from "@/lib/weekly";
 import FlexSearch from 'flexsearch';
+import fs from 'fs';
+import path from 'path';
+
+const JSON_PATH = path.join(process.cwd(), "public/json/");
 
 // 创建一个 FlexSearch 文档索引
 // Create a FlexSearch document index
-export const pageIndex = new FlexSearch.Document({
-  tokenize: "full",
-  cache: 100,
-  document: {
-    id: "id",
-    index: "content",
-    store: ["title", "content"],
-  },
-  context: {
-    resolution: 9,
-    depth: 2,
-    bidirectional: true,
-  },
-});
-export const sectionIndex = new FlexSearch.Document({
+// export const pageIndex = new FlexSearch.Document({
+//   tokenize: "full",
+//   cache: 100,
+//   document: {
+//     id: "id",
+//     index: "content",
+//     store: ["title"],
+//   },
+//   context: {
+//     resolution: 9,
+//     depth: 2,
+//     bidirectional: true,
+//   },
+// });
+export const sectionIndex: any = new FlexSearch.Document({
   cache: 100,
   tokenize: "full",
   document: {
@@ -39,7 +43,10 @@ let pageId = 0;
  * 创建索引并将其导出为 JSON 文件
  * Create the index and export it as JSON files
  */
-export const createIndex = async ({ documents }: { documents: WeeklyPost[] }) => {
+export const createIndex = async () => {
+  const { posts } = await getWeeklyPosts()
+  const documents = posts
+
   let pageContent = "";
   ++pageId;
 
@@ -78,16 +85,31 @@ export const createIndex = async ({ documents }: { documents: WeeklyPost[] }) =>
     // Add the page itself
     pageContent += `${title} ${content}`;
 
-    pageIndex.add({
-      id: pageId,
-      title: doc.title,
-      content: stripMarkdown(pageContent),
-    });
+    // pageIndex.add({
+    //   id: pageId,
+    //   title: doc.title,
+    //   content: stripMarkdown(pageContent),
+    // });
   }
 
-  // await new Promise((resolve, reject) => {
-  //   sectionIndex.export((key, data) => {
-  //     localStorage.setItem(key, data)
-  //   });
-  // });
+  await fs.promises.mkdir(JSON_PATH, { recursive: true });
+  sectionIndex.export(async (key: string, data: string) => {
+    await fs.promises.writeFile(`${JSON_PATH}${key}.json`, data || "");
+  });
 };
+
+// read index
+export async function loadAllIndexes() {
+  const filenames = fs.readdirSync(JSON_PATH);
+  filenames.forEach(file => {
+    if (file.endsWith('.json')) {
+      const filePath = path.join(JSON_PATH, file);
+      const data = fs.readFileSync(filePath, 'utf8');
+      // const parsedData = JSON.parse(data);
+
+      const key = file.slice(0, -5);
+      sectionIndex.import(key, data);
+    }
+  });
+  return filenames
+}
