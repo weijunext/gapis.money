@@ -20,9 +20,31 @@ type Props = {
 };
 
 const options = {
+  parseFrontmatter: true,
   mdxOptions: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [],
+    remarkPlugins: [remarkGfm, remarkMath],
+    rehypePlugins: [
+      [
+        rehypePrettyCode,
+        {
+          keepBackground: false,
+          defaultLang: {
+            block: "typescript",
+            inline: "javascript",
+          },
+          // getHighlighter: (options) =>
+          //   getHighlighter({
+          //     ...options,
+          //     paths: {
+          //       themes: "https://cdn.jsdelivr.net/npm/shiki@latest/themes",
+          //       wasm: "https://cdn.jsdelivr.net/npm/shiki@latest/dist",
+          //       languages:
+          //         "https://cdn.jsdelivr.net/npm/shiki@latest/languages",
+          //     },
+          //   }),
+        },
+      ],
+    ],
   },
 };
 
