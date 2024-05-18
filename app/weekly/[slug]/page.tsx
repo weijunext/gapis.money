@@ -11,7 +11,9 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { IoIosLink } from "react-icons/io";
+import rehypePrettyCode from "rehype-pretty-code";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
 
 type Props = {
   params: {
@@ -87,7 +89,7 @@ export default async function WeeklyDetailsPage({ params }: Props) {
           <MDXRemote
             source={content}
             components={MDXComponents}
-            options={options}
+            options={options as any}
           />
         </article>
         <Separator className="my-12 bg-gray-600" />
