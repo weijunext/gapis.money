@@ -66,13 +66,13 @@ export default function Footer() {
     <footer className="flex w-full flex-col border-t border-gray-600">
       <div className="max-w-7xl px-6 py-8 mt-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8 md:pr-8">
+          <div className="space-y-8 md:pr-8 mt-6">
             <div className="flex items-center justify-start">
-              <span className="text-medium font-medium">{siteConfig.name}</span>
+              <h1 className="text-medium font-medium">{siteConfig.name}</h1>
             </div>
-            <p className="text-small text-default-500">
+            <span className="text-small text-default-500">
               {siteConfig.description}
-            </p>
+            </span>
             <FooterLinks />
           </div>
           <div className="mt-6 grid grid-cols-2 gap-8 xl:col-span-2">
