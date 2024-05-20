@@ -1,5 +1,3 @@
-"use client";
-
 import FooterLinks from "@/components/footer/FooterLinks";
 import { siteConfig } from "@/config/site";
 
