@@ -46,7 +46,12 @@ export default function Footer() {
         <ul className="mt-6 space-y-4">
           {items.map((item) => (
             <li key={item.name}>
-              <Link className="text-default-500" href={item.href} size="sm">
+              <Link
+                className="text-default-500"
+                href={item.href}
+                target="_blank"
+                size="sm"
+              >
                 {item.name}
               </Link>
             </li>
