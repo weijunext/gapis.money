@@ -3,21 +3,26 @@ import { BsGithub, BsTwitterX, BsWechat } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL;
+const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME;
+const SITE_DESCRIPTION = process.env.NEXT_PUBLIC_SITE_DESCRIPTION;
+const AUTHOR_NAME = process.env.NEXT_PUBLIC_AUTHOR_NAME;
+const TWITTER_USERNAME = process.env.NEXT_PUBLIC_TWITTER_USERNAME;
+
 const baseSiteConfig = {
-  name: "信息差——独立开发者出海周刊",
-  description:
-    "Knowledge is power, info-gap is money!「信息差——独立开发者出海周刊」是一个帮助独立开发者缩小信息差的技术周刊。",
-  url: "https://gapis.money",
+  name: SITE_NAME || '信息差——独立开发者出海周刊',
+  description: SITE_DESCRIPTION || 'Knowledge is power, info-gap is money!「信息差——独立开发者出海周刊」是一个帮助独立开发者缩小信息差的技术周刊。',
+  url: SITE_URL || 'https://gapis.money',
   metadataBase: '/',
   keywords: ["信息差", "indie hacker", "独立开发者", "周刊", "独立开发者出海"],
   authors: [
     {
-      name: "weijunext",
-      url: "https://weijunext.com",
-      twitter: 'https://twitter.com/weijunext',
+      name: AUTHOR_NAME || 'weijunext',
+      url: SITE_URL || 'https://gapis.money',
+      twitter: `https://x.com/${TWITTER_USERNAME || 'weijunext'}`,
     }
   ],
-  creator: '@weijunext',
+  creator: `@${AUTHOR_NAME}`,
   defaultNextTheme: 'dark', // next-theme option: system | dark | light
   icons: {
     icon: "/favicon.ico",
