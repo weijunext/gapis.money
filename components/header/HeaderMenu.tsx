@@ -12,6 +12,15 @@ const HeaderMenu = () => {
       </Link>
       <div className="hidden md:block text-gray-600">|</div>
       <Link
+        href="https://noteforms.com/forms/bvjqwl"
+        className="link-default"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+      >
+        邮件订阅
+      </Link>
+      <div className="hidden md:block text-gray-600">|</div>
+      <Link
         href="https://github.com/weijunext/gapis.money/issues"
         className="link-default"
         target="_blank"
