@@ -127,7 +127,7 @@ dist
 # sitemap
 */sitemap*.xml
 */robots.txt
-./rss.xml
+*/rss.xml
 
 # public/json
 # index.json
