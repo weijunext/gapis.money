@@ -24,6 +24,8 @@ const generateRssFeed = async () => {
     link: `https://x.com/${TWITTER_USERNAME}`,
   };
   const { posts } = await getWeeklyPosts();
+
+  const latestPosts = posts.slice(0, 12);
   const feed = new Feed({
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
@@ -37,7 +39,7 @@ const generateRssFeed = async () => {
     copyright: `Copyright © 2024 by @${AUTHOR_NAME}`,
   });
 
-  posts.forEach((post) => {
+  latestPosts.forEach((post) => {
     feed.addItem({
       title: post.title,
       id: `${SITE_URL}/weekly/${post.slug}`,
