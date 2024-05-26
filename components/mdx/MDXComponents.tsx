@@ -70,7 +70,7 @@ const MDXComponents: MDXComponentsProps = {
   li: (props) => <li className="mb-2" {...props} />,
   code: (props) => (
     <code
-      className="bg-gray-600 rounded px-[0.3rem] py-[0.2rem] font-mono"
+      className="bg-gray-600 rounded px-1 py-[0.1rem] font-mono"
       {...props}
     />
   ),
