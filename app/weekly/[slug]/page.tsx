@@ -128,6 +128,9 @@ export default async function WeeklyDetailsPage({ params }: Props) {
             <Link href="/" className="link-underline">
               去首页
             </Link>
+            <Link href="/rss.xml" className="link-underline">
+              RSS
+            </Link>
             <Link
               href="https://twitter.com/weijunext/"
               target="_blank"
