@@ -26,3 +26,5 @@
 2024-05-20 [第2期：10x生产力](https://gapis.money/weekly/2024-05-20_002)  
 2024-05-27 [第3期：站在巨人的肩膀上](https://gapis.money/weekly/2024-05-27_003)  
 2024-06-03 [第4期：ChatTTS 霸榜 Github Trending](https://gapis.money/weekly/2024-06-03_004)  
+
+第5期遇到端午假期，顺延到周二发布。
