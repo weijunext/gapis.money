@@ -11,8 +11,8 @@ const footerNavigation = {
     { name: "J实验室", href: "https://weijunext.com/" },
     { name: "Next.js Practice", href: "https://nextjs.weijunext.com/" },
   ],
-  openSource: [{ name: "Smart Excel AI", href: "https://smartexcel.cc/" }],
-  boilerplate: [
+  openSource: [
+    { name: "Smart Excel AI", href: "https://smartexcel.cc/" },
     { name: "Next.js Clean Starter", href: "https://starter.weijunext.com/" },
     {
       name: "Landing Page Boilerplate",
@@ -26,6 +26,13 @@ const footerNavigation = {
       name: "Indie Hacker Tools",
       href: "https://github.com/weijunext/indie-hacker-tools",
     },
+  ],
+  tools: [
+    {
+      name: "Youtube中文配音",
+      href: "https://yd.transduck.com/admin/signup?code=24796",
+    },
+    { name: "抠图去背景", href: "https://www.getimg.app/" },
   ],
 };
 
@@ -91,16 +98,16 @@ export default function Footer() {
               </div>
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                {renderList({
-                  title: "Next.js模板",
-                  items: footerNavigation.boilerplate,
-                })}
-              </div>
               <div className="mt-10 md:mt-0">
                 {renderList({
                   title: "独立开发者出海",
                   items: footerNavigation.indieHacker,
+                })}
+              </div>
+              <div>
+                {renderList({
+                  title: "工具推荐",
+                  items: footerNavigation.tools,
                 })}
               </div>
             </div>
