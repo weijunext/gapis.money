@@ -1,0 +1,159 @@
+---
+title: 第5期：丢失一百万美金虚拟币
+slug: 2024-06-11_005
+date: 2024-06-11
+---
+
+<Aside>
+**\<信息差——独立开发者出海周刊介绍\>**
+
+Knowledge is power, info-gap is money!
+
+记录**独立开发者出海**用得到的优质信息，帮助独立开发者**缩小信息差**，每周一发布。
+
+周刊开放投稿，欢迎[投稿](https://github.com/weijunext/gapis.money/issues)以下内容：
+- 开源项目
+- 创意工具/生产力工具
+- 独立开发者出海教程
+- 优质文章/推文/视频
+
+本周刊由[@weijunext](https://x.com/weijunext)运营
+</Aside>
+
+## 丢失一百万美金虚拟币
+
+一位币圈老用户发帖说：我成了币圈卧底的牺牲品，账户里的100万美元灰飞烟灭。
+
+### 问题追查
+
+因为他的帖子已经删除，所以我只转述对大家有用的信息，主要说说100万美金虚拟币怎么没的，当作安全提醒：
+
+在事件发生后，这位用户找安全公司帮忙调查，他首相要弄清楚的第一个问题，就是在他的电脑手机都在身边，也没有收到任何账户在新设备登录的提醒、异地登陆提醒的情况下，黑客是通过什么手段把虚拟币转移。
+
+最终，安全公司把罪魁祸首锁定在一个叫做 Aggr 的 Chrome 插件上，这是一个历史悠久的开源行情数据网站的 Chrome 插件版。该插件的违法操作是这样的：这个插件申请了调用浏览器 Cookie 的权限，如果你安装并使用了这个插件，那么黑客就可以收集你的 Cookie，再利用 Cookie 劫持活跃的用户会话，伪装成用户本人，这样就可以绕过平台的各项安全措施，完全掌控你的账户。
+
+### 警惕恶意插件
+
+这是我第一次看到因为 Chrome 插件爆出的安全问题。很多人看到别人推荐什么好用的插件就会去安装试用，后来就算发现自己用不到也不会去卸载或者关闭。这一次因为 Chrome 插件造成100万美金损失的案例正好为大家敲响警钟：不要随意下载和使用不熟悉的 Chrome 插件。
+
+也因为推上爆出这件事，我的独立开发者群有一位群友花半天撸了一个检测 Cookie 调用情况插件，可以检测有哪些 Chrome 插件正在调用 Cookie，这也正是本期要推荐的第一个开源项目👇。
+
+## 开源项目
+
+- [WhoUsesCookies](https://github.com/sshallow/WhoUsesCookies)
+
+  「谁在用cookies」是一款 Chrome 浏览器扩展，旨在帮助用户检测和监控所有扩展程序是否具有读取他们浏览器 Cookie 的权限。
+
+  因为有人提出这个检测插件自己会不会「屠龙少年终变恶龙」，作者在 Gtihub Readme 里详细介绍了如何自己排查插件是否调用 Cookie，并且详细教学了如何自己使用源码安装。如果你有同样的担心，可以根据教程使用源码安装，然后永远不更新，这样既安全又能检测 Cookie。
+
+  ![who-uses-cookies](/assets/005/who-uses-cookies.webp)
+
+- [SPlayer](https://github.com/imsyy/SPlayer)
+
+  一个简约的音乐播放器，支持逐字歌词，下载歌曲，展示评论区，音乐云盘及歌单管理，音乐频谱，移动端基础适配。
+
+  ![SPlayer](/assets/005/SPlayer.webp)
+
+- [vite-web-extension](https://github.com/JohnBra/vite-web-extension)
+
+  Vite Web Extension 是一个集成了 React、TypeScript 和 TailwindCSS 的 Chrome 插件模板。
+
+  ![vite-web-extension](/assets/005/vite-web-extension.webp)
+
+- [Shadcn Cookie Consent](https://github.com/r2hu1/shadcn-cookie-consent)
+
+  基于 Next.js 14 实现的 Cookie 隐私弹窗开源方案。
+
+  ![shadcn-cookie-consent](/assets/005/shadcn-cookie-consent.webp)
+
+- [simple-one-api](https://github.com/fruitbars/simple-one-api)
+
+  通过标准的 OpenAI API 格式访问的各种国产大模型（支持千帆大模型平台、讯飞星火大模型、腾讯混元、MiniMax 和 Deep-Seek 等），开箱即用。
+
+  ![simple-one-api](/assets/005/simple-one-api.webp)
+
+## 工具推荐
+
+- [Magic UI](https://magicui.design/)
+
+  使用 React、Typescript、Tailwind CSS 和 Framer Motion 构建的 20 多个免费开源动画组件。
+
+  ![Magic UI](/assets/005/magic-ui.webp)
+
+- [vectorizer](https://vectorizer.ai/)
+
+  vectorizer 可以在线将 jpg、png 等类型的图片转为 svg 格式。
+
+  ![vectorizer](/assets/005/vectorizer.webp)
+
+- [autoi18n for nextjs](https://autoi18n.dev/)
+
+  一键处理 Next.js 项目多语言的集成和更新，节省人工处理和翻译的成本，使用方式是桌面软件的形式。
+
+  ![autoi18n](/assets/005/autoi18n.webp)
+
+- [Aceternity UI](https://ui.aceternity.com/)
+
+  Aceternity UI 提供了一系列的 UI 组件，支持 Next.js 和 React 使用，使用的是 TailwindCSS 和 Framer Motion。
+
+  ![aceternity](/assets/005/aceternity.webp)
+
+- [Clay Filter AI](https://clayai.show/zh)
+
+  将照片转换成粘土动画风格。
+
+  ![clayai](/assets/005/clayai.webp)
+
+- [keep screen on](https://keep-screen-on.com/)
+
+  一个可以让你的电脑屏幕保持常亮不息屏的工具。
+
+  ![keep-screen-on](/assets/005/keep-screen-on.webp)
+
+- [生成 Vercel 的 Deploy Button](https://vercel.com/docs/deployments/deploy-button)
+
+  Vercel 官方生成 Deploy Button 的工具，按顺序输入配置就会生成最终你需要的 Link。
+
+  ![Vercel Deploy Button](/assets/005/vercel-deploy-button.webp)
+
+- [markdown-to-wx](https://quail.ink/tools/markdown-to-wx/)
+
+  一款免费的 Markdown 转微信文章格式的编辑器。
+
+  ![markdown-to-wx](/assets/005/markdown-to-wx.webp)
+
+## 出海教程
+
+- [海外公司注册教程](https://note.mowen.cn/note/detail?noteUuid=PCP7lyBFWec24eP0LfRmq)
+
+- [Reddit 新人攒 Karma 的频道](https://www.reddit.com/r/karmaassist/)
+
+## 技术新闻
+
+- [大模型的扑克牌：独家内幕故事](https://wallstreetcn.com/articles/3715681)
+
+  若将创业选手比作德扑玩家，牌局上现有6名“玩家”：智谱AI、Minimax、月之暗面、百川智能、阶跃星辰、零一万物。每个背后都站着一众对通用AI野心勃勃的中国机构与个人，由他们提供这场牌局的“筹码”。
+
+- [Apple WWDC 2024发布了什么？](https://www.youtube.com/watch?v=RXeOiIDNNek)
+
+  - 苹果推出 Apple Intelligence，Siri 联手 GPT-4o，可回答问题和识别拍摄内容，免费使用（国区无）。
+  - Apple Vision Pro 迎来系统更新，功能更强大，并将在更多地区开售。
+  - iOS 18 更加个性化和注重隐私保护，并新增多项实用功能。
+  - AirPods Pro 和 Apple TV+ 体验升级，为用户带来更多便利和乐趣。
+  - watchOS 11 更加关注个人健康，并新增实用工具。
+  - iPadOS 18 生产力提升，期待已久的计算器 App 终于到来。
+  - macOS 15 Sequoia 强化与 iPhone 联动，并带来更便捷的使用体验。
+
+
+## 优质文章/推文/视频
+
+- [把 Next.js 项目部署在 Cloudflare Pages 需要了解的几个重大问题](https://m.okjike.com/originalPosts/665d783afcbf06ada3047d82?s=eyJ1IjoiNThhMTFmNDg4OGYzZGIwMDE2MTAyZTVhIiwiZCI6MX0%3D&utm_source=wechat_session)
+
+  作者介绍了以下需要注意的问题：
+  - 部署配置
+  - 兼容 Flag
+  - Runtime 设置
+  - Next-Auth 集成
+  - Crypto 模块
+
+- [Adobe 平替列表](https://github.com/KenneyNL/Adobe-Alternatives)
