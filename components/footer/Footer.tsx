@@ -8,20 +8,38 @@ import { siteConfig } from "@/config/site";
 
 const footerNavigation = {
   blog: [
-    { name: "J实验室", href: "https://weijunext.com/" },
-    { name: "Next.js Practice", href: "https://nextjs.weijunext.com/" },
+    {
+      name: "J实验室",
+      href: "https://weijunext.com/?utm_source=gapismoney&utm_medium=referral",
+    },
+    {
+      name: "Next.js Practice",
+      href: "https://nextjs.weijunext.com/?utm_source=gapismoney&utm_medium=referral",
+    },
   ],
   openSource: [
-    { name: "Smart Excel AI", href: "https://smartexcel.cc/" },
-    { name: "Next.js Clean Starter", href: "https://starter.weijunext.com/" },
+    {
+      name: "Smart Excel AI",
+      href: "https://smartexcel.cc/?utm_source=gapismoney&utm_medium=referral",
+    },
+    {
+      name: "Next.js Clean Starter",
+      href: "https://starter.weijunext.com/?utm_source=gapismoney&utm_medium=referral",
+    },
     {
       name: "Landing Page Boilerplate",
-      href: "https://landingpage.weijunext.com/",
+      href: "https://landingpage.weijunext.com/?utm_source=gapismoney&utm_medium=referral",
     },
-    { name: "Weekly Boilerplate", href: "https://weekly.weijunext.com/" },
+    {
+      name: "Weekly Boilerplate",
+      href: "https://weekly.weijunext.com/?utm_source=gapismoney&utm_medium=referral",
+    },
   ],
   indieHacker: [
-    { name: "独立开发者出海周刊", href: "https://gapis.money/" },
+    {
+      name: "独立开发者出海周刊",
+      href: "https://gapis.money/?utm_source=gapismoney&utm_medium=referral",
+    },
     {
       name: "Indie Hacker Tools",
       href: "https://github.com/weijunext/indie-hacker-tools",
@@ -30,9 +48,12 @@ const footerNavigation = {
   tools: [
     {
       name: "Youtube中文配音",
-      href: "https://yd.transduck.com/admin/signup?code=24796",
+      href: "https://yd.transduck.com/admin/signup?code=24796&utm_source=gapismoney&utm_medium=referral",
     },
-    { name: "抠图去背景", href: "https://www.getimg.app/" },
+    {
+      name: "抠图去背景",
+      href: "https://www.getimg.app/?utm_source=gapismoney&utm_medium=referral",
+    },
   ],
 };
 
