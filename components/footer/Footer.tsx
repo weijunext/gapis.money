@@ -37,12 +37,16 @@ const footerNavigation = {
   ],
   indieHacker: [
     {
+      name: "Indie Hacker Tools",
+      href: "https://github.com/weijunext/indie-hacker-tools",
+    },
+    {
       name: "独立开发者出海周刊",
       href: "https://gapis.money/?utm_source=gapismoney&utm_medium=referral",
     },
     {
-      name: "Indie Hacker Tools",
-      href: "https://github.com/weijunext/indie-hacker-tools",
+      name: "赞助周刊",
+      href: "/thanks/?utm_source=gapismoney&utm_medium=referral",
     },
   ],
   tools: [

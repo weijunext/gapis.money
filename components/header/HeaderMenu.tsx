@@ -21,12 +21,12 @@ const HeaderMenu = () => {
       </Link>
       <div className="hidden md:block text-gray-600">|</div>
       <Link
-        href="https://github.com/weijunext/gapis.money/issues"
+        href="/thanks"
         className="link-default"
         target="_blank"
         rel="noopener noreferrer nofollow"
       >
-        投稿
+        赞助
       </Link>
     </>
   );
