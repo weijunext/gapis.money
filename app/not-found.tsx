@@ -9,7 +9,7 @@ export default function NotFound() {
         <FollowButton name="回到首页" href="/" target="_self"></FollowButton>
         <FollowButton
           name="Twitter/X"
-          href="https://twitter.com/weijunext/"
+          href="https://x.com/weijunext/"
         ></FollowButton>
         <FollowButton
           name="Github"
