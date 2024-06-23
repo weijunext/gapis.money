@@ -27,4 +27,5 @@
 2024-05-27 [第3期：站在巨人的肩膀上](https://gapis.money/weekly/2024-05-27_003)  
 2024-06-03 [第4期：ChatTTS 霸榜 Github Trending](https://gapis.money/weekly/2024-06-03_004)  
 2024-06-10 [第5期：丢失一百万美金虚拟币](https://gapis.money/weekly/2024-06-11_005)  
-2024-06-10 [第6期：忘掉 Sora！Luma AI 推出视频 AI 工具](https://gapis.money/weekly/2024-06-17_006)  
+2024-06-17 [第6期：忘掉 Sora！Luma AI 推出视频 AI 工具](https://gapis.money/weekly/2024-06-17_006)  
+2024-06-24 [第7期：Ilya 创办安全超级智能](https://gapis.money/weekly/2024-06-24_007)  
