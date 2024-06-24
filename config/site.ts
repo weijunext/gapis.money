@@ -32,12 +32,12 @@ const baseSiteConfig = {
   headerLinks: [
     { name: 'issues', text: '投稿⤴', href: "https://github.com/weijunext/gapis.money/issues" },
     // { name: 'repo', href: "https://github.com/weijunext/gapis.money", icon: BsGithub },
-    { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
+    { name: 'twitter', href: "https://x.com/weijunext", icon: BsTwitterX },
     // { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee }
   ],
   footerLinks: [
     { name: 'email', href: "mailto:weijunext@gmail.com", icon: MdEmail },
-    { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
+    { name: 'twitter', href: "https://x.com/weijunext", icon: BsTwitterX },
     { name: 'github', href: "https://github.com/weijunext/", icon: BsGithub },
     { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee },
     { name: 'juejin', href: "https://juejin.cn/user/26044008768029", icon: SiJuejin },

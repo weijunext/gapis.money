@@ -28,7 +28,7 @@ export default function DeveloperCard() {
             <div className="w-full text-center mt-4 flex justify-evenly">
               <FollowButton
                 name="Twitter/X"
-                href="https://twitter.com/weijunext/"
+                href="https://x.com/weijunext/"
               ></FollowButton>
               <FollowButton
                 name="Github"

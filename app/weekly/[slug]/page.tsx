@@ -132,7 +132,7 @@ export default async function WeeklyDetailsPage({ params }: Props) {
               RSS
             </Link>
             <Link
-              href="https://twitter.com/weijunext/"
+              href="https://x.com/weijunext/"
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="link-underline"
