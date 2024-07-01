@@ -63,6 +63,7 @@ const MDXComponents: MDXComponentsProps = {
       target="_blank"
       rel="noopener noreferrer nofollow"
       {...props}
+      href={`${props.href}?utm_source=gapis.money`}
     />
   ),
   ul: (props) => <ul className="list-disc pl-5 mt-0 mb-4" {...props} />,
