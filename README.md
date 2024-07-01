@@ -29,3 +29,4 @@
 2024-06-10 [第5期：丢失一百万美金虚拟币](https://gapis.money/weekly/2024-06-11_005)  
 2024-06-17 [第6期：忘掉 Sora！Luma AI 推出视频 AI 工具](https://gapis.money/weekly/2024-06-17_006)  
 2024-06-24 [第7期：Ilya 创办安全超级智能](https://gapis.money/weekly/2024-06-24_007)  
+2024-07-01 [第8期：抵制技术毒瘤：CSDN 与 Gitcode](https://gapis.money/weekly/2024-07-01_008)  
