@@ -1,5 +1,7 @@
 @import './scrollbar.css';
-@import url('https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-webfont/1.6.0/style.min.css');
+/* @import url('https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-webfont/1.6.0/style.min.css'); */
+/* @import 'lxgw-wenkai-webfont/style.css'; */
+@import 'lxgw-wenkai-lite-webfont/style.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -95,7 +97,7 @@ html {
   }
   body {
     @apply bg-background text-foreground;
-    font-family: "LXGW WenKai",Helvetica,Tahoma,Arial,sans-serif;
+    font-family: "LXGW WenKai Lite",Helvetica,Tahoma,Arial,sans-serif;
     font-size: 16px;
     line-height: 1.6;
     word-wrap: break-word;

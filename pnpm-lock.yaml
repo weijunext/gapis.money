@@ -65,6 +65,9 @@ dependencies:
   lucide-react:
     specifier: ^0.316.0
     version: 0.316.0(react@18.2.0)
+  lxgw-wenkai-lite-webfont:
+    specifier: ^1.7.0
+    version: 1.7.0
   next:
     specifier: 14.1.0
     version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
@@ -5819,6 +5822,10 @@ packages:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /lxgw-wenkai-lite-webfont@1.7.0:
+    resolution: {integrity: sha512-VcQYNRpdXAxaZsJ18rfT1mmAreGqkIFNZ/9pdVLbT2Tkb+2lLWJDXq4zYxMEk9AcecSnxO31R2LHh5ieLlxjRg==}
     dev: false
 
   /markdown-extensions@1.1.1:
