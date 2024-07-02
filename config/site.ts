@@ -1,7 +1,7 @@
 import { SiteConfig } from "@/types/siteConfig";
 import { BsGithub, BsTwitterX, BsWechat } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
+import { SiJuejin, SiTwitter } from "react-icons/si";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL;
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME;
@@ -36,12 +36,13 @@ const baseSiteConfig = {
     // { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee }
   ],
   footerLinks: [
-    { name: 'email', href: "mailto:weijunext@gmail.com", icon: MdEmail },
     { name: 'twitter', href: "https://x.com/weijunext", icon: BsTwitterX },
+    { name: 'twitter_en', href: "https://x.com/wayne_dev", icon: SiTwitter },
     { name: 'github', href: "https://github.com/weijunext/", icon: BsGithub },
-    { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee },
+    // { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee },
     { name: 'juejin', href: "https://juejin.cn/user/26044008768029", icon: SiJuejin },
-    { name: 'weChat', href: "https://weijunext.com/make-a-friend", icon: BsWechat }
+    { name: 'weChat', href: "https://weijunext.com/make-a-friend", icon: BsWechat },
+    { name: 'email', href: "mailto:weijunext@gmail.com", icon: MdEmail },
   ],
   footerProducts: [
     // { url: 'https://weijunext.com/', name: 'J实验室' },
