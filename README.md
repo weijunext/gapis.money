@@ -30,3 +30,4 @@
 2024-06-17 [第6期：忘掉 Sora！Luma AI 推出视频 AI 工具](https://gapis.money/weekly/2024-06-17_006)  
 2024-06-24 [第7期：Ilya 创办安全超级智能](https://gapis.money/weekly/2024-06-24_007)  
 2024-07-01 [第8期：抵制技术毒瘤：CSDN 与 Gitcode](https://gapis.money/weekly/2024-07-01_008)  
+2024-07-01 [第9期：基于不同平台开发，算抄袭吗？](https://gapis.money/weekly/2024-07-08_009)  
