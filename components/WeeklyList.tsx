@@ -1,6 +1,7 @@
 import { WeeklyPost } from "@/types/weekly";
 import dayjs from "dayjs";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
+// import Link from "next/link";
 
 export default async function WeeklyList({
   isSide,

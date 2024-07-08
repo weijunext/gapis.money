@@ -9,6 +9,7 @@ import "@/styles/globals.css";
 import "@/styles/loading.css";
 import { Analytics } from "@vercel/analytics/react";
 import { Viewport } from "next";
+import { ViewTransitions } from "next-view-transitions";
 
 export const metadata = {
   ...siteConfig,
@@ -26,30 +27,32 @@ export default async function RootLayout({
 }) {
   // await createIndex();
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head />
-      <body className="min-h-screen bg-background antialiased">
-        <ThemeProvider
-          attribute="class"
-          enableSystem={false}
-          defaultTheme={siteConfig.defaultNextTheme}
-          forcedTheme={siteConfig.defaultNextTheme}
-        >
-          <Header />
-          <main className="flex flex-col items-center py-6">{children}</main>
-          <Footer />
-          <Analytics />
-          <TailwindIndicator />
-        </ThemeProvider>
-        {process.env.NODE_ENV === "development" ? (
-          <></>
-        ) : (
-          <>
-            <GoogleAnalytics />
-            <BaiDuAnalytics />
-          </>
-        )}
-      </body>
-    </html>
+    <ViewTransitions>
+      <html lang="en" suppressHydrationWarning>
+        <head />
+        <body className="min-h-screen bg-background antialiased">
+          <ThemeProvider
+            attribute="class"
+            enableSystem={false}
+            defaultTheme={siteConfig.defaultNextTheme}
+            forcedTheme={siteConfig.defaultNextTheme}
+          >
+            <Header />
+            <main className="flex flex-col items-center py-6">{children}</main>
+            <Footer />
+            <Analytics />
+            <TailwindIndicator />
+          </ThemeProvider>
+          {process.env.NODE_ENV === "development" ? (
+            <></>
+          ) : (
+            <>
+              <GoogleAnalytics />
+              <BaiDuAnalytics />
+            </>
+          )}
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }
