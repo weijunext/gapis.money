@@ -58,6 +58,10 @@ const footerNavigation = {
       name: "抠图去背景",
       href: "https://www.getimg.app/?utm_source=gapismoney&utm_medium=referral",
     },
+    {
+      name: "ChatHub",
+      href: "https://app.chathub.gg/?ref=gapismoney",
+    },
   ],
 };
 
