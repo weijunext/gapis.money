@@ -60,6 +60,8 @@ const content = `
 
 所有赞助过的朋友，如果有作品需要在周刊宣传，欢迎联系我补充信息
 
+- Airyland，作品：[批量查询域名是否注册](https://query.domains/)
+
 - Erving
 
 - 智*橙
