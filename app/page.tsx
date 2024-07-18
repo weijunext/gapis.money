@@ -17,7 +17,7 @@ export default async function Home() {
       <div className="hidden md:block md:w-1/5 pl-6"></div>
       <div className="w-full md:w-3/5 px-6">
         <SiteCard />
-        <WeeklyList posts={posts} />
+        <WeeklyList posts={posts} sectionType="weekly" />
         <DeveloperCard />
       </div>
       <div className="hidden md:flex justify-end md:w-1/5 pr-6 text-right">

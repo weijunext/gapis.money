@@ -6,9 +6,11 @@ import { Link } from "next-view-transitions";
 export default async function WeeklyList({
   isSide,
   posts,
+  sectionType,
 }: {
   isSide?: boolean;
   posts: WeeklyPost[];
+  sectionType: string;
 }) {
   const renderPosts = posts.filter((i) => i.visible);
   return (
@@ -27,7 +29,7 @@ export default async function WeeklyList({
             </span>
           )}
           <Link
-            href={`/weekly/${post.metadata.slug}`}
+            href={`/${sectionType || "weekly"}/${post.metadata.slug}`}
             className="link-default truncate transition-colors duration-500 ease-in-out"
           >
             {post.metadata.title}
