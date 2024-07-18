@@ -4,6 +4,8 @@ export type WeeklyPost = {
   slug?: string
   title?: string
   content: string
+  visible?: boolean
+  pin?: boolean
   metadata: {
     [key: string]: any
   },

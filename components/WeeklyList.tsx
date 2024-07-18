@@ -10,9 +10,10 @@ export default async function WeeklyList({
   isSide?: boolean;
   posts: WeeklyPost[];
 }) {
+  const renderPosts = posts.filter((i) => i.visible);
   return (
     <ul className="flex flex-col gap-4">
-      {posts.map((post) => (
+      {renderPosts.map((post) => (
         <li
           id={post.id}
           key={post.metadata.slug}

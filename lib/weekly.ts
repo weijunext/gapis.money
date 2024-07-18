@@ -23,11 +23,16 @@ export async function getWeeklyPosts(): Promise<{ posts: WeeklyPost[]; postsByMo
       const { data, content } = matter(fileContents)
       const month = dayjs(data.date).format('YYYY-MM-DD').slice(0, 7);
 
+      const visible = !(data.visible === 'draft' || data.visible === 'invisible');
+      const pin = data.pin && data.pin === 'pin';
+
       return {
         id: month,
         metadata: data, // { slug/url title date }
         title: data.title,
         slug: data.slug,
+        visible,
+        pin,
         content,
       }
     })

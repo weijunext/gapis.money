@@ -29,8 +29,8 @@ export const getCachedPosts = (): { posts: WeeklyPost[] | null, postsByMonth: Po
   };
 };
 
-export const setCachedPosts = ({ posts, postsByMonth }: { posts: WeeklyPost[], postsByMonth: PostsByMonth }): void => {
+export const setCachedPosts = ({ posts, postsByMonth }: { posts: WeeklyPost[], postsByMonth?: PostsByMonth }): void => {
   cache.posts = posts;
-  cache.postsByMonth = postsByMonth;
+  cache.postsByMonth = postsByMonth || null;
   cache.lastUpdated = Date.now();
 };
