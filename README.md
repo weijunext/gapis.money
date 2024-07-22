@@ -32,3 +32,4 @@
 2024-07-01 [第8期：抵制技术毒瘤：CSDN 与 Gitcode](https://gapis.money/weekly/2024-07-01_008)  
 2024-07-08 [第9期：基于不同平台开发，算抄袭吗？](https://gapis.money/weekly/2024-07-08_009)  
 2024-07-15 [第10期：OpenAI正研发代号“草莓”的突破性AI推理技术](https://gapis.money/weekly/2024-07-15_010)  
+2024-07-22 [第11期：GPT-4o mini：速度更快，价格更低](https://gapis.money/weekly/2024-07-22_011)  
