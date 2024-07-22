@@ -25,7 +25,7 @@ const generateRssFeed = async () => {
   };
   const { posts } = await getWeeklyPosts();
 
-  const latestPosts = posts.slice(0, 12);
+  const latestPosts = posts.slice(0, 12).filter((i) => i);
   const feed = new Feed({
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
@@ -38,7 +38,7 @@ const generateRssFeed = async () => {
     author,
     copyright: `Copyright © 2024 by @${AUTHOR_NAME}`,
   });
-
+  console.log(latestPosts);
   latestPosts.forEach((post) => {
     feed.addItem({
       title: post.title,
@@ -69,28 +69,23 @@ async function getWeeklyPosts() {
       const { data, content } = matter(fileContents);
       const month = dayjs(data.date).format("YYYY-MM-DD").slice(0, 7);
 
-      return {
-        id: month,
-        metadata: data, // { slug/url title date }
-        title: data.title,
-        slug: data.slug,
-        content,
-      };
+      const visible = !(
+        data.visible === "draft" || data.visible === "invisible"
+      );
+
+      if (visible) {
+        return {
+          id: month,
+          metadata: data, // { slug/url title date }
+          title: data.title,
+          slug: data.slug,
+          content,
+        };
+      }
     })
   );
 
-  // Group by month
-  const postsByMonth = posts.reduce((acc, post) => {
-    const month = dayjs(post.metadata.date).format("YYYY-MM-DD").slice(0, 7);
-    if (!acc[month]) {
-      acc[month] = [];
-    }
-    acc[month].push(post);
-    return acc;
-  }, {});
-
   return {
     posts,
-    postsByMonth,
   };
 }
