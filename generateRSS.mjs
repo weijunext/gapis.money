@@ -38,7 +38,7 @@ const generateRssFeed = async () => {
     author,
     copyright: `Copyright © 2024 by @${AUTHOR_NAME}`,
   });
-  console.log(latestPosts);
+
   latestPosts.forEach((post) => {
     feed.addItem({
       title: post.title,
