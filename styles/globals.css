@@ -95,6 +95,9 @@ html {
   * {
     @apply border-border;
   }
+  html {
+    scroll-padding-top: 68px;
+  }
   body {
     @apply bg-background text-foreground;
     font-family: "LXGW WenKai Lite",Helvetica,Tahoma,Arial,sans-serif;

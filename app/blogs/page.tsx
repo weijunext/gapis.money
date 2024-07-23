@@ -7,7 +7,7 @@ export default async function BlogsHome() {
   const { posts }: { posts: WeeklyPost[] } = await getBlogs();
 
   return (
-    <div className="flex flex-row w-full pt-6">
+    <div className="flex flex-row w-full pt-0">
       <div className="hidden md:block md:w-1/5 pl-6"></div>
       <div className="w-full md:w-3/5 px-6">
         <WeeklyList posts={posts} sectionType="blogs" />
