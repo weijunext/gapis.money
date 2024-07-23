@@ -15,7 +15,7 @@ export async function getWeeklyPosts(): Promise<{ posts: WeeklyPost[]; postsByMo
   let filenames = await fs.promises.readdir(postsDirectory)
   filenames = filenames.reverse()
 
-  const posts = await Promise.all(
+  const posts: (WeeklyPost | null)[] = await Promise.all(
     filenames.map(async (filename) => {
       const fullPath = path.join(postsDirectory, filename)
       const fileContents = await fs.promises.readFile(fullPath, 'utf8')
@@ -24,22 +24,28 @@ export async function getWeeklyPosts(): Promise<{ posts: WeeklyPost[]; postsByMo
       const month = dayjs(data.date).format('YYYY-MM-DD').slice(0, 7);
 
       const visible = !(data.visible === 'draft' || data.visible === 'invisible');
-      const pin = data.pin && data.pin === 'pin';
+      const pin = !!(data.pin && data.pin === 'pin');
 
-      return {
-        id: month,
-        metadata: data, // { slug/url title date }
-        title: data.title,
-        slug: data.slug,
-        visible,
-        pin,
-        content,
+      if (visible) {
+        return {
+          id: month,
+          metadata: data, // { slug/url title date }
+          title: data.title,
+          slug: data.slug,
+          visible,
+          pin,
+          content,
+        }
+      } else {
+        return null
       }
     })
   )
 
+  const postsNoNull = posts.filter((i) => !!i) as WeeklyPost[]
+
   // Group by month
-  const postsByMonth: PostsByMonth = posts.reduce((acc: PostsByMonth, post: WeeklyPost) => {
+  const postsByMonth: PostsByMonth = postsNoNull.reduce((acc: PostsByMonth, post: WeeklyPost) => {
     const month = dayjs(post.metadata.date).format('YYYY-MM-DD').slice(0, 7);
     if (!acc[month]) {
       acc[month] = [];
@@ -49,11 +55,11 @@ export async function getWeeklyPosts(): Promise<{ posts: WeeklyPost[]; postsByMo
   }, {});
 
   setCachedPosts({
-    posts,
+    posts: postsNoNull,
     postsByMonth
   });
   return {
-    posts,
+    posts: postsNoNull,
     postsByMonth
   }
 }

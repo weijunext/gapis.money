@@ -10,7 +10,7 @@ export async function getBlogs(): Promise<{ posts: WeeklyPost[] }> {
   let filenames = await fs.promises.readdir(postsDirectory)
   filenames = filenames.reverse()
 
-  const posts = await Promise.all(
+  let posts = await Promise.all(
     filenames.map(async (filename) => {
       const fullPath = path.join(postsDirectory, filename)
       const fileContents = await fs.promises.readFile(fullPath, 'utf8')
@@ -19,21 +19,26 @@ export async function getBlogs(): Promise<{ posts: WeeklyPost[] }> {
       const month = dayjs(data.date).format('YYYY-MM-DD').slice(0, 7);
 
       const visible = !(data.visible === 'draft' || data.visible === 'invisible');
-      const pin = data.pin && data.pin === 'pin';
+      const pin = !!(data.pin && data.pin === 'pin');
 
-      return {
-        id: month,
-        metadata: data, // { slug/url title date }
-        title: data.title,
-        slug: data.slug,
-        visible,
-        pin,
-        content,
+      if (visible) {
+        return {
+          id: month,
+          metadata: data, // { slug/url title date }
+          title: data.title,
+          slug: data.slug,
+          visible,
+          pin,
+          content,
+        }
+      } else {
+        return null
       }
     })
   )
+  const postsNoNull = posts.filter((i) => !!i) as WeeklyPost[]
 
   return {
-    posts
+    posts: postsNoNull
   }
 }
