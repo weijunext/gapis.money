@@ -13,7 +13,9 @@ export async function getWeeklyPosts(): Promise<{ posts: WeeklyPost[]; postsByMo
 
   const postsDirectory = path.join(process.cwd(), 'content')
   let filenames = await fs.promises.readdir(postsDirectory)
-  filenames = filenames.reverse()
+  filenames = filenames
+    .filter(filename => filename !== '.DS_Store')
+    .reverse()
 
   const posts: (WeeklyPost | null)[] = await Promise.all(
     filenames.map(async (filename) => {

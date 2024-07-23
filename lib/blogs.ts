@@ -8,7 +8,9 @@ export async function getBlogs(): Promise<{ posts: WeeklyPost[] }> {
 
   const postsDirectory = path.join(process.cwd(), 'blogs')
   let filenames = await fs.promises.readdir(postsDirectory)
-  filenames = filenames.reverse()
+  filenames = filenames
+    .filter(filename => filename !== '.DS_Store')
+    .reverse()
 
   let posts = await Promise.all(
     filenames.map(async (filename) => {
@@ -36,6 +38,7 @@ export async function getBlogs(): Promise<{ posts: WeeklyPost[] }> {
       }
     })
   )
+
   const postsNoNull = posts.filter((i) => !!i) as WeeklyPost[]
 
   return {
