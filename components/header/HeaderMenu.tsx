@@ -38,7 +38,7 @@ const HeaderMenu = () => {
       >
         邮件订阅
       </Link>
-      <div className="hidden md:block text-gray-600">|</div>
+      {/* <div className="hidden md:block text-gray-600">|</div> */}
       {/* <Link
         href="/thanks"
         className="link-default"
