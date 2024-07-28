@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 interface AsideProps {
   icon?: string;
@@ -23,7 +24,22 @@ export function Aside({
       <div className="rounded rounded-1 text-center h-8 w-8 bg-[#6edff6] text-2xl relative top-[-30px] left-[-30px]">
         {icon || "💡"}
       </div>
-      <div>{children}</div>
+      <div>
+        {children}
+        <p>
+          本期由{" "}
+          <Link
+            href="https://PHCopilot.AI/"
+            title="PHCopilot.AI"
+            target="_blank"
+            className="link-underline"
+          >
+            PHCopilot.AI
+          </Link>{" "}
+          赞助，PH Copilot 是你的 Product Hunt 助手，可以让 AI
+          为你介绍新产品，10 秒掌握产品信息，挖掘新灵感。
+        </p>
+      </div>
     </div>
   );
 }
