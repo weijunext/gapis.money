@@ -29,7 +29,7 @@ export function Aside({
         <p>
           本期由{" "}
           <Link
-            href="https://PHCopilot.AI/"
+            href="https://PHCopilot.AI/?utm_source=gapis.money"
             title="PHCopilot.AI"
             target="_blank"
             className="link-underline"
