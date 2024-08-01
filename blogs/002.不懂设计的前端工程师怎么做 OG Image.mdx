@@ -1,0 +1,96 @@
+---
+title: 不懂设计的程序员怎么做 OG Image
+slug: og-image-design-workflow
+date: 2024-08-01
+---
+
+<Aside>
+**\<信息差——独立开发者出海周刊介绍\>**
+
+Knowledge is power, info-gap is money!
+
+记录**独立开发者出海**用得到的优质信息，帮助独立开发者**缩小信息差**。
+
+当前是[博客板块](/blogs)，由[@weijunext](https://x.com/intent/follow?screen_name=weijunext)创作内容，独立于[周刊板块](/)之外。
+
+如果你想投稿作品到[周刊板块](/)，欢迎到[Github](https://github.com/weijunext/gapis.money/issues)投稿以下内容：
+- 开源项目
+- 创意工具/生产力工具
+- 独立开发者出海教程
+- 优质文章/推文/视频
+</Aside>
+
+OG 全称是 Open Graph Protocol，是一个网站的元数据协议，网站元数据携带 OG Image 的情况下，可以在支持这个元数据的网站展示网站卡片，OG Image 就是这个网站卡片的封面图。网站有一张好看的 OG Image，在推特、脸书这样的社交平台上点击率都会提高。
+
+最近，因为要发布 [PH Copilot](https://PHCopilot.AI/)，需要准备 OG Image，要是搁以前，一张截图梭哈就算了，但是这次不一样，一千多元买的域名，门面不能太粗糙。于是就摸索半天，做了一张过得去的 OG Image。
+
+// TODO:链接
+要看我实践的成果，请[点击这个推特链接]()看网站封面，或者直接看下面的截图👇。
+// TODO: 
+![OG-demo](/assets/blogs/002/og-demo.webp)
+
+由于操作具备可复制性，所以决定分享出来，造福同为手残党的程序员们。
+
+本文原始链接：https://gapis.money/blogs/og-image-design-workflow
+
+## 实现流程
+
+### 第一步：思考需求
+
+我的思路很简单，就三个要点：
+
+1. 这是一个 Chrome 插件产品，OG Image 上应该放一张产品截图
+2. 曾经有高人分享，OG Image 上面放一个按钮会增加转化，那我也加一个
+3. 现在 AI 工具流行渐变色背景，那背景就用渐变色
+
+### 第二步：AI 员工出场
+
+有了核心思路，就可以让 AI 提供详细设计方案，我找了 Claude，Prompt 结构很简单：
+
+- 产品标题：PH Copilot
+- 产品介绍：It's an AI-Powered Chrome Extension for Product Hunt. Quickly overview products and craft standout comments using AI. Ideal for hunters and makers.
+- 我的需求：现在我要给这个产品设计一个 OG Image，要求图片上有一张产品截图，让用户从图片就能看出来插件用法；还要有一个按钮，因为按钮可以提高点击率。
+
+请你为我制定 OG Image 的设计方案。
+
+就这样，Claude 给出了很详细的设计思路，包含尺寸、布局、内容区和信息区分别展示什么、视觉元素、配色等等信息。
+
+![claude response](/assets/blogs/002/claude-response.webp)
+
+### 第三步：到 Figma 找素材
+
+不得不说，Figma 是个设计大宝藏，我搜关键词“Product Hunt”，看了一些设计方法，也找到了开源的渐变色背景素材。
+
+本来还想直接用 Figma 来做图，但是确实手残，用不来。
+
+### 第四步：用创客贴/稿定设计做图
+
+创客贴/稿定设计都是提供了很多模板和设计素材的网站，功能差不多，就不说是哪个平台了，因为我有会员，不用考虑素材商用的问题。
+
+我在平台里找了一圈模板，没有找到满意的，还是自己创建空白模板（按 AI 提供的尺寸），再把 Figma 上的开源渐变色背景图放上去。
+
+剩下的步骤就是根据 AI 提供的设计方案一步步做。
+
+### 第五步：压缩图片
+
+设计网站导出的图片都很大，用来做 OG Image 会出现加载慢的问题，所以压缩图片是必须的。
+
+我现在用的压缩方法是：
+
+- 先到 https://tinypng.com/ 压缩一遍
+- 再到 https://tiny-img.com/webp/ 压缩并转成 webp 格式
+
+两个压缩步骤反过来也行。
+
+### 第六步：体验一下
+
+有两种方法：
+
+- 使用 AITDK 插件（Chrome 插件商城搜 AITDK 就行）的 Social 功能可以看到 OG Image
+- 把网站地址粘贴到推特输入框，就会显示带 OG Image 的链接卡片
+
+然后根据视觉效果微调 - 重复体验，我微调了 4 个版本，最终确定了现在你们看到的这张图。
+
+## 总结
+
+设计也是个孰能生巧的手艺活，第一次做耗时还比较长，以后多做几次应该可以控制在 30 分钟内搞定。
