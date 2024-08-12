@@ -35,3 +35,5 @@
 2024-07-22 [第11期：GPT-4o mini：速度更快，价格更低](https://gapis.money/weekly/2024-07-22_011)  
 2024-07-29 [第12期：Sam Altman 做了一个全民基本收入实验](https://gapis.money/weekly/2024-07-29_012)  
 2024-08-05 [第13期：OpenAI 可能在 12 个月内破产，预计亏损 50 亿美元](https://gapis.money/weekly/2024-08-05_013)  
+2024-08-12 [第14期：第14期：Open AI 联合创始人 John Schulman 离职](https://gapis.money/weekly/2024-08-02_014)  
+
