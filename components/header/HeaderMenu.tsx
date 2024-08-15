@@ -31,7 +31,8 @@ const HeaderMenu = () => {
       </Link>
       <div className="hidden md:block text-gray-600">|</div>
       <Link
-        href="https://noteforms.com/forms/bvjqwl"
+        // href="https://noteforms.com/forms/bvjqwl"
+        href="https://quail.ink/gapismoney"
         className="link-default"
         target="_blank"
         rel="noopener noreferrer nofollow"
