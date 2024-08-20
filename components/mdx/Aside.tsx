@@ -36,8 +36,8 @@ export function Aside({
           >
             PHCopilot.AI
           </Link>{" "}
-          赞助，PH Copilot 是你的 Product Hunt 助手，可以让 AI
-          为你介绍新产品，10 秒掌握产品信息，挖掘新灵感。
+          赞助，PH Copilot 是你的 ProductHunt 助手，为你快速生成高质量评论，升级
+          ProductHunt 金牌账号。
         </p>
       </div>
     </div>
