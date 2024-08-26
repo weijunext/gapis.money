@@ -37,4 +37,5 @@
 2024-08-05 [第13期：OpenAI 可能在 12 个月内破产，预计亏损 50 亿美元](https://gapis.money/weekly/2024-08-05_013)  
 2024-08-12 [第14期：Open AI 联合创始人 John Schulman 离职](https://gapis.money/weekly/2024-08-12_014)  
 2024-08-19 [第15期：分享 11 条数字营销铁律](https://gapis.money/weekly/2024-08-19_015)  
+2024-08-26 [第16期：独立开发者的战术和战略](https://gapis.money/weekly/2024-08-26_016)  
 
