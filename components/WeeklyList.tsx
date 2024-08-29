@@ -30,7 +30,8 @@ export default async function WeeklyList({
           )}
           <Link
             href={`/${sectionType || "weekly"}/${post.metadata.slug}`}
-            className="link-default truncate transition-colors duration-500 ease-in-out"
+            title={post.title}
+            className="link-default w-full transition-colors duration-500 ease-in-out flex justify-start items-center"
           >
             {post.metadata.title}
           </Link>

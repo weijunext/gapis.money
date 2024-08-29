@@ -11,6 +11,7 @@ const FooterLinks = () => {
         <Link
           key={link.name}
           href={link.href}
+          title={link.name}
           target="_blank"
           rel="noopener noreferrer nofollow"
           className="mx-3 flex max-w-[24px] flex-col items-center justify-center"

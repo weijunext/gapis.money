@@ -9,7 +9,7 @@ const FooterProducts = () => {
       {footerProducts.map((product, index) => {
         return (
           <span key={product.url}>
-            <Link href={product.url} target="_blank">
+            <Link href={product.url} title={product.name} target="_blank">
               {product.name}
             </Link>
             {index !== footerProducts.length - 1 ? (

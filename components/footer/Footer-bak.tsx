@@ -15,7 +15,11 @@ const Footer = () => {
         <FooterProducts />
         <div className="flex space-x-2">
           <div>{`©${currentYear}`}</div>{" "}
-          <Link href={authors[0].twitter || authors[0].url} target="_blank">
+          <Link
+            href={authors[0].twitter || authors[0].url}
+            title={authors[0].name}
+            target="_blank"
+          >
             {authors[0].name}
           </Link>{" "}
           <div>All rights reserved.</div>

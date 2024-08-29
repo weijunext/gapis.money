@@ -100,6 +100,7 @@ export default async function WeeklyDetailsPage({ params }: Props) {
               href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh-hans"
               target="_blank"
               rel="noopener noreferrer nofollow"
+              title="版权声明"
             >
               <span className="hidden lg:flex items-center">
                 版权声明
@@ -112,23 +113,31 @@ export default async function WeeklyDetailsPage({ params }: Props) {
           </div>
           <div className="flex gap-2 flex-col lg:flex-row">
             {prevPost ? (
-              <Link href={prevPost.metadata.slug} className="link-underline">
+              <Link
+                href={prevPost.metadata.slug}
+                className="link-underline"
+                title="上一篇"
+              >
                 上一篇
               </Link>
             ) : (
               <></>
             )}
             {nextPost ? (
-              <Link href={nextPost.metadata.slug} className="link-underline">
+              <Link
+                href={nextPost.metadata.slug}
+                className="link-underline"
+                title="下一篇"
+              >
                 下一篇
               </Link>
             ) : (
               <></>
             )}
-            <Link href="/" className="link-underline">
+            <Link href="/" className="link-underline" title="去首页">
               去首页
             </Link>
-            <Link href="/rss.xml" className="link-underline">
+            <Link href="/rss.xml" className="link-underline" title="RSS">
               RSS
             </Link>
             <Link
@@ -136,6 +145,7 @@ export default async function WeeklyDetailsPage({ params }: Props) {
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="link-underline"
+              title="Twitter/X"
             >
               Twitter/X
             </Link>
