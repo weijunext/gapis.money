@@ -15,11 +15,15 @@ export default async function TimeLine({
     >
       <div className="p-4">
         <h4 className="mb-4 text-sm font-medium leading-none">
-          <Link href="/">时间线</Link>
+          <Link href="/" title="时间线">
+            时间线
+          </Link>
         </h4>
         {Object.keys(postsByMonth).map((month) => (
           <div key={month}>
-            <Link href={`#${month}`}>{month}</Link>
+            <Link href={`#${month}`} title="month">
+              {month}
+            </Link>
             <Separator className="my-2 bg-gray-600" />
           </div>
         ))}
