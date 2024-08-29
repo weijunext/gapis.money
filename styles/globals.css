@@ -8,8 +8,8 @@
 
 html {
   scroll-behavior: smooth !important;
- }
- 
+}
+
 @layer base {
   :root {
     /* #9bdbee */
