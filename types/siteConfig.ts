@@ -50,6 +50,7 @@ export type SiteConfig = {
   twitter?: {
     card: string
     title: string
+    site: string
     description: string
     images?: string[]
     creator: string

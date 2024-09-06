@@ -60,6 +60,14 @@ export async function generateMetadata({ params }: Props) {
   return {
     ...siteConfig,
     title: `${post?.metadata.title || "404"} | ${siteConfig.name}`,
+    openGraph: {
+      ...siteConfig.openGraph,
+      title: `${post?.metadata.title || "404"} | ${siteConfig.name}`,
+    },
+    twitter: {
+      ...siteConfig.twitter,
+      title: `${post?.metadata.title || "404"} | ${siteConfig.name}`,
+    },
   };
 }
 
