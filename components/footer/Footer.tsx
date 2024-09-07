@@ -17,7 +17,11 @@ const footerNavigation = {
       href: "https://weijunext.com/?utm_source=gapismoney&utm_medium=referral",
     },
     {
-      name: "Next.js Practice",
+      name: "Next.js 中文文档",
+      href: "https://nextjscn.org/?utm_source=gapismoney&utm_medium=referral",
+    },
+    {
+      name: "Next.js 实践教程",
       href: "https://nextjs.weijunext.com/?utm_source=gapismoney&utm_medium=referral",
     },
   ],
