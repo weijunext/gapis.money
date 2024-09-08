@@ -26,19 +26,32 @@ export function Aside({
       </div>
       <div>
         {children}
-        <p>
-          本期由{" "}
-          <Link
-            href="https://PHCopilot.AI/?utm_source=gapis.money"
-            title="PHCopilot.AI"
-            target="_blank"
-            className="link-underline"
-          >
-            PHCopilot.AI
-          </Link>{" "}
-          赞助，PH Copilot 是你的 ProductHunt 助手，为你快速生成高质量评论，升级
-          ProductHunt 金牌账号。
-        </p>
+        <div>
+          赞助列表：
+          <br />
+          <li>
+            <Link
+              href="https://PHCopilot.AI/?utm_source=gapis.money"
+              title="PHCopilot.AI"
+              target="_blank"
+              className="link-underline"
+            >
+              PHCopilot.AI
+            </Link>
+            ：快速生成 ProductHunt 高质量打榜评论，助你轻松升级金牌。
+          </li>
+          <li>
+            <Link
+              href="https://nextjscn.org/docs?utm_source=gapis.money"
+              title="Next.js 中文文档"
+              target="_blank"
+              className="link-underline"
+            >
+              Next.js 中文文档
+            </Link>
+            ：样式和官网一样的中文文档，创造沉浸式Next.js中文学习体验。
+          </li>
+        </div>
       </div>
     </div>
   );
