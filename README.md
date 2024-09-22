@@ -22,6 +22,7 @@
 
 ## 周刊历史
 
+2024-09-09 [第19期：OpenAI 发布 Prompt 指南](https://gapis.money/weekly/2024-09-23_019)  
 2024-09-09 [第18期：马斯克都开始玩悟空了](https://gapis.money/weekly/2024-09-09_018)  
 2024-09-02 [第17期：独立开发者出海产品分发渠道](https://gapis.money/weekly/2024-09-02_017)  
 2024-08-26 [第16期：独立开发者的战术和战略](https://gapis.money/weekly/2024-08-26_016)  

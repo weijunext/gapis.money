@@ -1,0 +1,201 @@
+---
+title: 第19期：OpenAI 发布 Prompt 指南
+slug: 2024-09-23_019
+date: 2024-09-23
+---
+
+<Aside>
+**\<信息差——独立开发者出海周刊介绍\>**
+
+Knowledge is power, info-gap is money!
+
+记录**独立开发者出海**用得到的优质信息，帮助独立开发者**缩小信息差**，每周一发布。
+
+周刊开放投稿，欢迎[投稿](https://github.com/weijunext/gapis.money/issues)以下内容：
+- 开源项目
+- 创意工具/生产力工具
+- 独立开发者出海教程
+- 优质文章/推文/视频
+
+本周刊由[@weijunext](https://x.com/intent/follow?screen_name=weijunext)运营
+</Aside>
+
+## OpenAI 发布 Prompt 指南
+
+最近 OpenAI 发布了 o1 模型，顺便给了用户一份 Prompt 指南，这份指南不是仅适用于 OpenAI 的产品，因为至少在 Claude 的实践中也非常有效。
+
+因为很多人对 Prompt 编写不太了解，有的人会写得很简单但期待获得精准的结果，有的人会写得很冗长实际结果也差强人意，所以看到这份指南后，我准备发到周刊分享给大家。
+
+总结来说，写 Prompt 强调简洁性、避免使用思维链提示，以及使用分隔符。
+
+以下是 OpenAI 的建议：
+
+模型在面对直接明了的提示时表现最佳，某些 Prompt 工程技巧，如少样本提示或指示模型“逐步思考”，可能不会提升性能，有时甚至可能会产生负面影响。以下是一些最佳实践：
+
+- **保持提示简单直接**：这些模型擅长理解和回应简短、清晰的指令，无需过多指导。
+
+- **避免思维链提示**：由于这些模型内部已进行推理，因此提示它们“逐步思考”或“解释你的推理过程”是不必要的。
+
+- **使用分隔符以提高清晰度**：使用三重引号、XML标签或章节标题等分隔符来清晰标示输入的不同部分，帮助模型正确解释各个部分。
+
+- **限制检索增强生成（RAG）中的额外上下文**：当提供额外的上下文或文档时，只包含最相关的信息，以防止模型过度复杂化其响应。
+
+举例：
+
+```md
+<context>
+
+Please analyze the writing style, tone, and structure in the following examples. Focus on elements like vocabulary choice, sentence complexity, pacing, and overall voice.
+
+请分析以下示例中的写作风格、语气和结构。重点关注词汇选择、句子复杂度、节奏和整体语调等元素。
+
+</context>
+
+<examples>
+
+[Insert your writing samples here, add delimiters between them as well]
+
+[在此插入您的写作样本，同时在样本之间添加分隔符]
+
+</examples>
+
+<instruction>
+
+Generate a [type of content, e.g., "informative article" or "blog post"] about [specific topic]. The content should match the style, tone, and structure of the provided examples. Make sure it is original, engaging, and suitable for [mention the target audience or purpose].
+
+生成一篇关于[具体主题]的[内容类型，例如"信息文章"或"博客文章"]。内容应与提供的示例在风格、语气和结构上相匹配。确保内容原创、引人入胜，并适合[提及目标受众或目的]。
+
+</instruction>
+```
+
+
+## 开源项目
+
+- [up-mode-extension](https://github.com/cunzaizhuyi/up-mode-extension)
+
+  这是[程序员飞叶](https://web.okjike.com/u/544A32A3-0B7B-467C-AD18-9D24A3BFCC83)开发的一键隐藏浏览器插件的Chrome插件，解决了每次截图屏幕都要手动一个个插件取消固定的需求。
+
+- [react-symbols](https://github.com/pheralb/react-symbols)
+
+  这是一个 React 矢量图标仓库，主要目标是作为 VSCode 的主题图标使用，也可以应用于 React 项目，而且作者提供了 npm 包，使用很方便。
+
+  ![react-symbols](/assets/019/react-symbols.webp)
+
+- [Real-Address-Generator](https://github.com/Adonis142857/Real-Address-Generator)
+
+  一个基于 Cloudflare Workers 的真实地址生成器，可以生成中国，美国，英国，德国，法国等22个国家的真实地址。
+
+  ![Real-Address-Generator](/assets/019/real-address-generator.webp)
+
+- [open-resume](https://github.com/xitanggg/open-resume)
+
+  开源、免费的简历生成器，集成了 AI 生成功能，支持上传自己的本地简历进行优化。
+
+  ![open-resume](/assets/019/open-resume.gif)
+
+- [next-music-player](https://github.com/leerob/next-music-player)
+
+  一个使用Next.js构建的音乐播放器，支持播放本地和远程音频文件，支持移动端响应式设计，也有音乐播放器常用的快捷键功能。
+
+- [voideditor](https://github.com/voideditor/void)
+
+  Cursor 开源版，同样基于 VSCode 开发的编辑器，不过还没开放使用，需要申请 waitlist。
+
+- [quicktype](https://github.com/glideapps/quicktype)
+
+  一个帮助开发者生成 TypeScript 类型的工具，只需要输入 JSON 数据，就能生成准确的 TS 类型定义。
+
+
+## 工具推荐
+
+- [Image AI](https://imgai.ai/)
+
+  Image AI 是一个功能丰富的 AI 图像处理平台，适合各种图像编辑和创作需求。
+
+  ![imgai](/assets/019/imgai.webp)
+
+- [Cursor 101](https://cursor101.com/)
+
+  一个 Cursor AI 学习资源网站，提供 Cursor 使用教程、视频教程推荐和 AI 编程实践案例分享。
+
+  ![Cursor 101](/assets/019/cursor101.webp)
+
+- [Text Compare](https://diffsuite.com/)
+
+  完全免费在线文本比对工具，支持实时文档比较和合并，以及多种文本处理工具。
+
+  ![diffsuite](/assets/019/diffsuite.webp)
+
+- [autoi18n](https://autoi18n.dev/)
+
+  面向开发人员的国际化工具，一键为项目集成 i18n，并支持持续更新、翻译等。
+
+- [AI 扩图](https://huggingface.co/spaces/fffiloni/diffusers-image-outpaint)
+
+  huggingface 有一个 AI 扩充图片背景的 space，试了一下效果还不错。
+
+
+## 出海教程
+
+- [Chrome 插件获得“精选”标签的教程](https://x.com/HongyuanCao/status/1821558568132497629)
+
+- [推特搜索小技巧](https://x.com/leeoxiang/status/1801875890726703529?s=46&t=hdUQ6QQ4RM7M1-m3YrfVCQ)
+
+- [出海网站经验总结](https://github.com/princehuang/overseas-website-note)
+
+
+## 技术新闻
+
+- [Google NotebookLM推出文档生成播客功能](https://blog.google/technology/ai/notebooklm-audio-overviews/)
+
+- OpenAI 发布 o1模型
+
+  OpenAI 新系列模型 o1 模型首先发布，特色是推理能力更强。以下是 o1 模型的官方信息汇总，由 [阿晓Ocean](https://m.okjike.com/users/9a28ae31-425c-49c9-9ac9-f8e5db536c07) 整理推荐：
+
+  - [博客](https://openai.com/index/introducing-openai-o1-preview/)
+
+  - [评估报告 - o1](https://openai.com/index/learning-to-reason-with-llms/)
+  
+  - [评估报告 - o1-mini](https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/)
+
+  - [系统卡](https://openai.com/index/openai-o1-system-card/)
+  
+  - [API文档](https://platform.openai.com/docs/guides/reasoning)
+
+  - [展示视频](https://www.youtube.com/playlist?list=PLOXw6I10VTv_T9QV-DKXhq7HFUQRkGQLI)
+
+- [Luma 上线 API](https://lumalabs.ai/dream-machine/api)
+
+- [快手可灵 1.5 版本发布](https://x.com/Kling_ai/status/1836615107918598236)
+
+
+## 优质文章/推文/视频/资源
+
+- [《专栏：Chrome插件全栈开发》](https://xiaobot.net/p/ship-ph-copilot?refer=1e5db497-8ed5-461b-af85-e71cb80e3787)
+
+  本专栏实现了「PHCopilot」完整的功能，让你学完后就能开发上线自己的全栈SaaS工具。
+
+- [李沐讲座：大语言模型的实践经验和未来预测](https://www.youtube.com/watch?v=ziHUcDh0DwM)
+
+- 全栈工程师想要搞点东西，却发现没有 UI 和原型协作作有点无从下手，可以试试以下 AI 生成 UI 的工具，由 [@jianyusu0988](https://x.com/jianyusu0988/status/1833061635902370265) 整理推荐
+
+  - [Generate Design Systems quickly](https://www.figma.com/community/plugin/1350743748296105581/generate-design-systems-quickly-figr-identity-free-beta)
+
+    Figma AI插件，助你几分钟时间输出一套完整的设计系统。
+
+  - [V0](https://v0.dev)
+
+    使用 shadcn/ui 通过简单的文本提示和图像生成UI。
+
+  - [AI 3D Generation](https://spline.design/ai-generate)
+
+    专门用于3D元素的UI设计，支持文本，2D图像转换3D模型，生成的3D内容可轻松集成到网站和应用中。
+
+  - [Creatie](https://creatie.ai/)
+
+    相当于加上了 AI 功能的 Figma。
+
+  - [openui](https://openui.fly.dev/)
+
+  - [Whimsical](https://whimsical.com/)
+
