@@ -24,6 +24,11 @@ const footerNavigation = {
       name: "Next.js 实践教程",
       href: "https://nextjs.weijunext.com/?utm_source=gapismoney&utm_medium=referral",
     },
+    {
+      name: "Chrome插件全栈开发",
+      href: "https://xiaobot.net/p/ship-ph-copilot?refer=1e5db497-8ed5-461b-af85-e71cb80e3787",
+      rel: "noopener noreferrer nofollow",
+    },
   ],
   openSource: [
     {
@@ -80,7 +85,7 @@ export default function Footer() {
       items,
     }: {
       title: string;
-      items: { name: string; href: string }[];
+      items: { name: string; href: string; rel?: string }[];
     }) => (
       <div>
         <h3 className="text-small font-semibold">{title}</h3>
@@ -93,6 +98,7 @@ export default function Footer() {
                 title={item.name}
                 target="_blank"
                 size="sm"
+                rel={item.rel || "noopener noreferrer"}
               >
                 {item.name}
               </Link>
