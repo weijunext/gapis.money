@@ -42,10 +42,11 @@ export function Aside({
           </li>
           <li>
             <Link
-              href="https://PHCopilot.AI/?utm_source=gapis.money"
+              href="https://xiaobot.net/p/ship-ph-copilot?refer=1e5db497-8ed5-461b-af85-e71cb80e3787"
               title="PHCopilot.AI"
               target="_blank"
               className="link-underline"
+              rel="noopener norefferer nofollow"
             >
               《专栏：Chrome插件全栈开发》
             </Link>
@@ -54,11 +55,10 @@ export function Aside({
           </li>
           <li>
             <Link
-              href="https://xiaobot.net/p/ship-ph-copilot?refer=1e5db497-8ed5-461b-af85-e71cb80e3787"
+              href="https://nextjscn.org/docs?utm_source=gapis.money"
               title="Next.js 中文文档"
               target="_blank"
               className="link-underline"
-              rel="noopener norefferer nofollow"
             >
               Next.js 中文文档
             </Link>
