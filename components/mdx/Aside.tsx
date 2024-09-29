@@ -38,7 +38,7 @@ export function Aside({
             >
               PHCopilot.AI
             </Link>
-            ：快速生成 ProductHunt 高质量打榜评论，助你轻松升级金牌。
+            ：快速生成 ProductHunt 高质量打榜评论，轻松升级金牌账号。
           </li>
           <li>
             <Link
@@ -48,10 +48,9 @@ export function Aside({
               className="link-underline"
               rel="noopener norefferer nofollow"
             >
-              《专栏：Chrome插件全栈开发》
+              《Chrome插件全栈开发实战》
             </Link>
-            ：本专栏实现了「PH
-            Copilot」完整的功能，让你学完后就能开发上线自己的全栈SaaS工具。
+            ：真实出海项目的实战教学课，帮助你半个月内成为全栈出海工程师。
           </li>
           <li>
             <Link
