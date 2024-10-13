@@ -36,10 +36,6 @@ const footerNavigation = {
       href: "https://smartexcel.cc/?utm_source=gapismoney&utm_medium=referral",
     },
     {
-      name: "Next.js Clean Starter",
-      href: "https://starter.weijunext.com/?utm_source=gapismoney&utm_medium=referral",
-    },
-    {
       name: "Landing Page Boilerplate",
       href: "https://landingpage.weijunext.com/?utm_source=gapismoney&utm_medium=referral",
     },
