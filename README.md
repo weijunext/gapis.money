@@ -17,6 +17,8 @@
 
 - [首发地网站：Gapis.money](https://gapis.money/)  
 - [RSS订阅](https://gapis.money/rss.xml)  
+- [邮箱订阅（暂停同步)](https://quail.ink/gapismoney)  
+- [公众号「BigYe程普」（暂停同步）](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5NTQ0NDI3OQ==&action=getalbum&album_id=3456480654760919050&scene=173&subscene=0&sessionid=0&enterid=1716776496&from_msgid=2649588781&from_itemidx=1&count=3&nolastread=1#wechat_redirect)  
 
 ## 周刊历史
 
