@@ -17,13 +17,12 @@
 
 - [首发地网站：Gapis.money](https://gapis.money/)  
 - [RSS订阅](https://gapis.money/rss.xml)  
-- [邮箱订阅](https://noteforms.com/forms/bvjqwl)  
-- [公众号「BigYe程普」](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5NTQ0NDI3OQ==&action=getalbum&album_id=3456480654760919050&scene=173&subscene=0&sessionid=0&enterid=1716776496&from_msgid=2649588781&from_itemidx=1&count=3&nolastread=1#wechat_redirect)  
 
 ## 周刊历史
 
-2024-09-09 [第20期：AI是专业能力的放大器](https://gapis.money/weekly/2024-09-30_020)  
-2024-09-09 [第19期：OpenAI 发布 Prompt 指南](https://gapis.money/weekly/2024-09-23_019)  
+2024-10-14 [第21期：.io域名会消失吗？](https://gapis.money/weekly/2024-10-14_021)  
+2024-09-30 [第20期：AI是专业能力的放大器](https://gapis.money/weekly/2024-09-30_020)  
+2024-09-23 [第19期：OpenAI 发布 Prompt 指南](https://gapis.money/weekly/2024-09-23_019)  
 2024-09-09 [第18期：马斯克都开始玩悟空了](https://gapis.money/weekly/2024-09-09_018)  
 2024-09-02 [第17期：独立开发者出海产品分发渠道](https://gapis.money/weekly/2024-09-02_017)  
 2024-08-26 [第16期：独立开发者的战术和战略](https://gapis.money/weekly/2024-08-26_016)  
