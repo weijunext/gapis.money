@@ -1,0 +1,172 @@
+---
+title: 第22期：多邻国真的可以帮助学英语吗？
+slug: 2024-10-21_022
+date: 2024-10-21
+---
+
+<Aside>
+**\<信息差——独立开发者出海周刊介绍\>**
+
+Knowledge is power, info-gap is money!
+
+记录**独立开发者出海**用得到的优质信息，帮助独立开发者**缩小信息差**，每周一发布。
+
+周刊开放投稿，欢迎[投稿](https://github.com/weijunext/gapis.money/issues)以下内容：
+- 开源项目
+- 创意工具/生产力工具
+- 独立开发者出海教程
+- 优质文章/推文/视频
+
+本周刊由[@weijunext](https://x.com/intent/follow?screen_name=weijunext)运营
+</Aside>
+
+## 多邻国真的可以帮助学英语吗？
+
+前几天，我在[即刻](https://m.okjike.com/originalPosts/670e56ad9d53db7b447a1d6c)和[X](https://x.com/weijunext/status/1846156390454202623)发了一个问题：真的有人用多邻国学会说英语吗？
+
+大家讨论结果是：多邻国的机制会让人沉迷，但对于语言学习来说作用有限。
+
+那天想到这个问题的时候，是我正在用 AI 翻译自己的一篇文章，翻译结果里有些单词不懂，我就依次把不认识的单词发过去，让 AI 介绍单词含义和用法。我也不确信这样的学习方法有没有用，但是个人感觉技术类文章会有一些出镜率比较高的单词，如果能把这部分单词熟悉下来，以后读技术文章效率应该会更高。
+
+举个例子，关于 Robust 这个单词，Claude 会这样解释：
+
+```
+"Robust" 是一个在技术和工程领域经常使用的词。让我详细解释一下：
+
+1. 基本含义：
+   - 强健的、坚固的
+   - 健壮的、稳定的
+   - 可靠的、能够承受压力或变化的
+
+2. 在技术和软件领域的特定含义：
+   - 能够在各种条件下正常运行的
+   - 能够处理错误和异常情况而不崩溃的
+   - 性能稳定，不易受外部因素影响的
+
+3. 使用场景：
+   - 描述软件系统：A robust operating system
+   - 描述算法：A robust algorithm that can handle various input types
+   - 描述网络：A robust network infrastructure
+
+4. 同义词：sturdy, resilient, strong, durable (根据上下文有所不同)
+
+5. 例句：
+   - We need to build a robust security system to protect against cyber attacks.
+   - The new framework is more robust, capable of handling high traffic loads without crashing.
+
+在之前提到的例子中，"Chrome's robust extension permission system" 可以理解为 "Chrome 强大而可靠的扩展权限系统"。这里的 "robust" 强调了该系统的可靠性、安全性和稳定性。
+
+使用 "robust" 而不是更简单的词如 "strong" 或 "good" 的原因：
+
+1. 技术准确性：在技术领域，"robust" 有特定的含义，暗示了系统的可靠性和稳定性。
+
+2. 专业性：这是一个在工程和技术文档中常用的词，使用它会让描述显得更专业。
+
+3. 全面性：它不仅表示强大，还暗示了系统能够应对各种情况和挑战。
+
+在英文技术交流和文档中，"robust" 是一个非常常见和重要的词。使用它可以准确地传达系统或解决方案的可靠性和稳定性，特别是在描述需要处理复杂情况或高负载的系统时。
+```
+
+这个解释包含了单词基本含义、在上下文中的含义、关联句子解释、使用场景、在技术领域的用法等等信息，我觉得是非常靠谱的单词学习方式了。
+
+我又联想到多邻国的学习模式，我用过一段时间，可以说是几乎没有效果，因为那种学习模式没有场景关联，基本学完就废。我就开始思考真的有人靠多邻国学会英语吗？我总结出来：多邻国能解决的需求，远低于他们提供的情绪价值。
+
+想到这里，思路就开阔了，idea冒了出来了——人人都可以通过提供情绪价值来设计英语学习方法。
+
+例如我设想到的这个idea：
+
+很多人喜欢看TED、大学演讲，那么可以设计一个可以由用户自主上传学习资料（英文文章/演讲）的应用，上传后用户把不懂的单词挑出来，平台把这些单词做成卡片，卡片上就是上面AI教学示例的结构，通过滑动卡片来学习单词，卡片上再加一个语音播放，教用户纯正的口语发音。
+
+这种学习方式基于内容，学习效果可能会比多邻国要好。
+
+你可以拿我的这个idea去设计开发一款自己的应用，只要把学习过程设计得更有趣味性，能够满足用户情绪价值，或许能出现一个比多邻国更有效的产品。
+
+## 开源项目
+
+- [MemFree](https://github.com/memfreeme/memfree)
+
+  Memfree 利用最强大的 AI 模型 (Claude 3.5 Sonnet) 和最流行的前端框架 (React + Tailwind + Shadcn UI), 几秒为你生成生产可用的 UI 组件和页面。支持实时 UI 预览、AI驱动的内容搜索、截图生成生成 UI 等功能。
+
+  ![number-flow](/assets/022/memfree.webp)
+
+- [vue-fabric-editor](https://github.com/ikuaitu/vue-fabric-editor)
+
+  基于 fabric.js 和 Vue 的开源图片编辑器，可自定义字体、素材、设计模板。作者已经维护多年，现在开源仓库已获得超过 5k stars，而且是基于 MIT 协议。
+
+  ![vue-fabric-editor](/assets/022/vue-fabric-editor.webp)
+
+- [VirtualWife](https://github.com/yakami129/VirtualWife)
+
+  这是一个虚拟数字人项目，作者想打造一个拥有自己“灵魂”的虚拟数字人，你可以像朋友一样和她相识，作者希望虚拟数字人融入人类生活，作为恋爱导师，心理咨询师，解决人类的情感需求，目前已支持 B 站直播。
+
+  ![VirtualWife](/assets/022/virtual-wife.webp)
+
+- [text-behind-image](https://github.com/RexanWONG/text-behind-image)
+
+  在图片主体后加上你想添加的文字，这个项目刚获得了 ProductHunt 日榜第一。
+
+  ![text-behind-image](/assets/022/textbehindimage.webp)
+
+- [number-flow](https://github.com/barvian/number-flow)
+
+  这是一个专门处理数字动画的 React 组件，这样展示数据就高级多了。
+
+  ![number-flow](/assets/022/number-flow.gif)
+
+- [ToastFish](https://github.com/Uahh/ToastFish)
+
+  这是一个利用 Windows 通知栏背单词的软件，卷王们可以在上班、上课等恶劣环境下安全隐蔽地背单词了。
+
+  ![ToastFish](/assets/022/toastfish.gif)
+
+- [assistant-ui](https://github.com/Yonom/assistant-ui)
+
+  这是一个用于AI聊天的 React 组件集，它提供了一套完整的工具和组件，用于快速构建AI聊天界面。
+
+## 工具推荐
+
+- [Flux Pro](https://fluxproweb.com/)
+
+  这是一个在线 AI 图像和视频生成平台，基于 Flux 的模型，支持了 AI 图像生成、AI 视频生成、LoRA 图像生成器、图片转视频等功能，可以一站式搞定图片和视频需求。
+
+  ![Flux Pro](/assets/022/fluxproweb.webp)
+
+- [美国顶尖高校分布地图](https://university-ranking-map.netlify.app/)
+
+  这个网站可以让准备留学和已经在海外的人对美国的大学分布有一个地理上的整体感知。
+
+  ![map](/assets/022/map.webp)
+
+- [PostNitro](https://postnitro.ai/)
+
+  PostNitro 可以为 Instagram、LinkedIn、TikTok 等创建精美的轮播图，几分钟内即可生成可定制的、与品牌一致的内容。
+
+  ![postnitro](/assets/022/postnitro.webp)
+
+- [Galileo AI](https://www.usegalileo.ai/explore)
+
+  Galileo AI 是一个生成 UI 的工具，支持通过文字生成 UI 和 截图生成 UI，生成结果可以直接复制到 figma 里。
+
+  ![Galileo AI](/assets/022/galileo.webp)
+
+- [stream.new](https://stream.new/)
+
+  这是一个简单的视频上传和分享平台，用户上传视频文件，就能获得一个可分享的视频播放链接，这样临时使用的视频就不用放在自己的服务器了。
+
+- [video-background-removal](https://huggingface.co/spaces/innova-ai/video-background-removal)
+
+  Hugging Face 上有一个 AI 视频抠图工具，可以去除每一帧视频的背景图。
+
+
+## 出海/技术教程
+
+- [分享一个获取stripe高权重外链（DR93）的方法](https://m.okjike.com/originalPosts/66df00babe1b0f6ab7a4f8d7)
+
+- [将 Chrome 浏览器默认搜索引擎替换成 GPTSearch](https://x.com/imxiaohu/status/1845723541096014119)
+
+- [OpenAI 发布了最新支持音频的 Chat 模型 gpt-4o-audio-preview](https://platform.openai.com/docs/guides/audio)
+
+
+## 优质文章/推文/视频/资源
+
+- [如何设计安全的对外 API？](https://mp.weixin.qq.com/s/7d_ScT8CR4trHO6KyKX0pg)
