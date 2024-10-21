@@ -22,7 +22,7 @@
 
 ## 周刊历史
 
-2024-10-14 [第22期：多邻国真的可以帮助学英语吗？](https://gapis.money/weekly/2024-10-21_022)  
+2024-10-21 [第22期：多邻国真的可以帮助学英语吗？](https://gapis.money/weekly/2024-10-21_022)  
 2024-10-14 [第21期：.io域名会消失吗？](https://gapis.money/weekly/2024-10-14_021)  
 2024-09-30 [第20期：AI是专业能力的放大器](https://gapis.money/weekly/2024-09-30_020)  
 2024-09-23 [第19期：OpenAI 发布 Prompt 指南](https://gapis.money/weekly/2024-09-23_019)  
