@@ -5,12 +5,14 @@ interface AsideProps {
   icon?: string;
   children?: React.ReactNode;
   type?: "default" | "warning" | "danger";
+  showSponsor?: 0 | 1;
 }
 
 export function Aside({
   children,
   icon,
   type = "default",
+  showSponsor = 1,
   ...props
 }: AsideProps) {
   return (
@@ -26,44 +28,49 @@ export function Aside({
       </div>
       <div>
         {children}
-        <div>
-          赞助列表：
-          <br />
-          <li>
-            <Link
-              href="https://PHCopilot.AI/?utm_source=gapis.money"
-              title="PHCopilot.AI"
-              target="_blank"
-              className="link-underline"
-            >
-              PHCopilot.AI
-            </Link>
-            ：快速生成 ProductHunt 高质量打榜评论，轻松升级金牌账号。
-          </li>
-          <li>
-            <Link
-              href="https://xiaobot.net/p/ship-ph-copilot?refer=1e5db497-8ed5-461b-af85-e71cb80e3787"
-              title="PHCopilot.AI"
-              target="_blank"
-              className="link-underline"
-              rel="noopener norefferer nofollow"
-            >
-              《Chrome插件全栈开发实战》
-            </Link>
-            ：真实出海项目的实战教学课，帮助你半个月内成为全栈出海工程师。
-          </li>
-          <li>
-            <Link
-              href="https://nextjscn.org/docs?utm_source=gapis.money"
-              title="Next.js 中文文档"
-              target="_blank"
-              className="link-underline"
-            >
-              Next.js 中文文档
-            </Link>
-            ：样式和官网一样的中文文档，创造沉浸式Next.js中文学习体验。
-          </li>
-        </div>
+
+        {showSponsor === 1 ? (
+          <div>
+            赞助列表：
+            <br />
+            <li>
+              <Link
+                href="https://PHCopilot.AI/?utm_source=gapis.money"
+                title="PHCopilot.AI"
+                target="_blank"
+                className="link-underline"
+              >
+                PHCopilot.AI
+              </Link>
+              ：快速生成 ProductHunt 高质量打榜评论，轻松升级金牌账号。
+            </li>
+            <li>
+              <Link
+                href="https://xiaobot.net/p/ship-ph-copilot?refer=1e5db497-8ed5-461b-af85-e71cb80e3787"
+                title="PHCopilot.AI"
+                target="_blank"
+                className="link-underline"
+                rel="noopener norefferer nofollow"
+              >
+                《Chrome插件全栈开发实战》
+              </Link>
+              ：真实出海项目的实战教学课，帮助你半个月内成为全栈出海工程师。
+            </li>
+            <li>
+              <Link
+                href="https://nextjscn.org/docs?utm_source=gapis.money"
+                title="Next.js 中文文档"
+                target="_blank"
+                className="link-underline"
+              >
+                Next.js 中文文档
+              </Link>
+              ：样式和官网一样的中文文档，创造沉浸式Next.js中文学习体验。
+            </li>
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );
