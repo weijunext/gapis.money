@@ -1,0 +1,167 @@
+---
+title: 第24期：一个独立开发者用25万用户换来的破产课
+slug: 2024-11-04_24
+date: 2024-11-04
+---
+
+<Aside showSponsor={0}>
+**\<信息差——独立开发者出海周刊介绍\>**
+
+Knowledge is power, info-gap is money!
+
+记录**独立开发者出海**用得到的优质信息，帮助独立开发者**缩小信息差**，每周一发布。
+
+周刊开放投稿，欢迎[投稿](https://github.com/weijunext/gapis.money/issues)以下内容：
+- 开源项目
+- 创意工具/生产力工具
+- 独立开发者出海教程
+- 优质文章/推文/视频
+
+本周刊由[@weijunext](https://x.com/intent/follow?screen_name=weijunext)运营
+
+
+赞助列表：
+- [Mkdirs](https://mkdirs.com/): 功能完善的导航站模板，集成了登录、支付、博客等功能，有人最快花了2小时就发布了自己的导航站。
+- [Next.js 中文文档](https://nextjscn.org/docs?utm_source=gapis.money): Next.js v15 最新中文文档，网站样式和官网一样，创造沉浸式Next.js中文学习体验。
+- [《Chrome插件全栈开发实战》 - 11月4日12点涨价](https://xiaobot.net/p/ship-ph-copilot?refer=1e5db497-8ed5-461b-af85-e71cb80e3787): 真实出海项目的实战教学课，帮助你半个月内成为全栈出海工程师。
+</Aside>
+
+## 一个独立开发者用25万用户换来的破产课
+
+大家都看多了独立开发赚钱的案例，今天来一起看一个失败的案例。主人公的副业产品有几万用户后，辞掉工作，全职做独立开发，结果产品一上付费功能就停止增长了，最终入不敷出。
+
+原帖来自Reddit [I got 250,000 users, quit my job, and then growth stopped](https://www.reddit.com/r/SideProject/comments/1gds937/i_got_250000_users_quit_my_job_and_then_growth/)，以下是帖子翻译，看完欢迎拉到文末评论区聊聊。
+
+去年我开发了一个AI助手(olly.bot)，用户通过苹果iMessage或短信就能使用。其实就是给ChatGPT加了些实用功能，比如网络搜索和提醒功能。我在Product Hunt和Reddit上推广后，用户数就开始爆炸式增长。因为是基于苹果iMessage的服务，很难被封禁，反而在一些禁用ChatGPT的国家特别受欢迎。最火的时候，就因为几个AI大V在某个国家安利，一个月就涨了3.5万新用户。
+
+那会儿我几乎是在免费提供服务。托微软创业支持计划的福（对了，这个项目能拿15万美元额度，推荐去申请），我用Azure额度来支付OpenAI的API费用。虽然搭建消息服务系统挺费劲的，但好在是我自己做的，所以每月开销才500美元不到。看着每个月50%的增长率，我有点飘了，心想反正用户基数在这儿，想什么时候收费都行。
+
+结果就是我太天真了。4个月前一拍脑袋就辞了工作，开始限制免费服务，让用户付费。然后就惨了 - 周活跃用户从7万暴跌到9千，付费用户才400多个，每人每月就收4块钱。为了提高转化率，只能不断降价。现在开始收费后，增长连之前的十分之一都不到，每次收紧免费政策都把新用户数打击得更惨。
+
+现在真是进退两难。看来是太冲动就辞职了，还背着房贷，但覆水难收。有没有人遇到过类似情况？有什么建议能让项目重回正轨吗？或者有什么好点子能重新带动增长？
+
+_原帖完_
+
+---
+
+AI 热评：
+
+关于用户增长的本质：
+
+- 用户数不等于商业价值。25万用户听起来很诱人，但如果这些用户的核心诉求是"免费替代品"，那么这种增长其实是脆弱的
+- 在某些特殊市场环境下（比如ChatGPT被封禁的地区），用户增长可能来源于临时性需求，这种增长往往不可持续
+- 有时"用户增长"反而会让我们忽视更重要的问题：我们到底在解决什么问题？用户愿意为什么付费？
+
+关于商业模式：
+
+- 免费服务不是商业模式，它只是获客策略。真正的商业模式必须建立在用户愿意付费的价值之上
+- 重要的不是有多少用户，而是有多少用户面临着足够急迫的问题，以至于愿意掏钱解决
+- 在决定商业模式时，与其追求用户基数，不如先找到一个小而精准的市场，深入理解他们的需求
+
+给独立开发者的建议：
+
+- 在产品早期就要设计付费机制，哪怕只是小额收费，也要测试用户的付费意愿
+- 找到你的"铁粉用户"，理解他们为什么愿意付费，这比疯狂扩张用户基数更重要
+- 不要迷恋表面的增长数据，要关注更深层的指标：
+  * 用户留存率如何？
+  * 付费转化率是多少？
+  * 单个用户的终身价值？
+- 考虑构建多元化的收入来源，比如：
+  * 企业定制版本
+  * 高级功能付费
+  * API接口服务
+  * 行业解决方案
+
+## 开源项目
+
+- [token-kit](https://github.com/tokenScript-Framework/token-kit/)
+
+  开源 web3 网站的组件，shadcn 风格，支持 CLI 拷贝源码到本地。
+
+  ![token-kit](/assets/024/token-kit.webp)
+
+- [art-avatar](https://github.com/YOYZHANG/art-avatar)
+
+  一个头像生成器，可以创建展示绘画过程的线条动画、可以生成的带有动画效果的SVG文件、可以下载并用于博客和社交媒体。
+
+  ![art-avatar](/assets/024/art-avatar.gif)
+
+- [cloud-document-converter](https://github.com/whale4113/cloud-document-converter)
+
+  一个 Chrome 扩展，支持下载、复制飞书云文档为 Markdown。
+
+- [maxun](https://github.com/getmaxun/maxun)
+
+  开源、免费、无代码爬虫机器人，通过可视化界面创建bot即可抓取网页中的列表、文字和图片等内容。
+
+- [OpenVoice](https://github.com/myshell-ai/OpenVoice)
+
+  这是 MIT 和 MyShell 合作开发的即时声音克隆项目，它可以准确复制参考音色并支持多语言语音生成。
+
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+
+  支持 YouTube 等数千个网站的视频下载，并且提供了格式选择、后处理、字幕下载等增强特性，可以在 Windows、MacOS 和 Linux 等主流平台上运行。
+
+
+## 工具推荐
+
+- [AI Video Online](https://videoweb.ai/)
+
+  AI视频聚合工具，支持了kling 1.0, Luma AI, Runway gen-3 turbo, Hailuo 1.0, Mochi 1几个目前最先进的生成视频模型，可以一键选择多个模型同时生成，快速体验对比多个ai模型的效果。
+
+  ![videoweb](/assets/024/videoweb.webp)
+
+- [Mkdirs](https://mkdirs.com/)
+
+  功能完善的导航站模板，集成了登录、支付、博客等功能，模板上线10天就让作者获得2k美元收益，其中还有海外用户购买。作者也在推特分享了很多有用的营销经验，想学习营销的朋友可以[关注](https://x.com/javayhuwx)试试。
+
+  ![Mkdirs](/assets/024/mkdirs.webp)
+
+- [kuakua](https://kuakua.app/zh/)
+
+  kuakua.app 是一个心理学资源站，基于积极心理学与相关促进人类潜能开发的理论为基础，聚焦心理学、心理学全球学习资源、心理学相关理论、研究、实验、测试、游戏等等相关相关资源收集平台。
+
+  ![kuakua](/assets/024/kuakua.webp)
+
+- [Mochi 1 AI](https://mochi1.me/)
+
+  通过输入文本来自动生成视频的平台，平台提供了不同模板和样式。
+
+  ![mochi1](/assets/024/mochi1.webp)
+
+- [IconKitchen](https://icon.kitchen/)
+
+  一个可以快速生成全平台图标的工具，并提供实时预览。
+
+  ![IconKitchen](/assets/024/icon-kitchen.webp)
+
+- [L(o*62).ong](https://loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong/)
+
+  让你的 URL 变得超级长长长。
+
+  ![Long](/assets/024/long.webp)
+
+- [AI4Papers](https://ai4papers.com/)
+
+  AI4Papers 能够帮助研究人员高效地搜索、分析和理解顶级期刊的学术论文；通过AI驱动，为您提供即时的论文摘要、关键发现和专家见解。
+
+- [SearchGPT](https://chromewebstore.google.com/detail/searchgpt/ejcfepkfckglbgocfkanmcdngdijcgld)
+
+  OpenAI 发布 Chrome 插件 SearchGPT，这是一个结合了 GPT 能力的搜索增强工具，可以为你提供快速、及时的答案，并附带相关网络来源链接。
+
+
+## 出海/技术教程
+
+- [cloudflare简明中文使用教程](https://github.com/zgimszhd61/cloudflare-quickstart)
+
+- [SEO入门指南](https://www.indiehackers.com/post/seo-from-a-newbie-for-beginners-bcc8c5ca10)
+
+- [想要把你的虚拟资源变现？看看这些平台](https://x.com/abel_yelin/status/1851152146349084798)
+
+
+## 优质文章/推文/视频/资源
+
+- [质疑 Marc 的 ShipFast 模板的声音越来越大了](https://www.indiehackers.com/post/tech/security-bugs-engulf-shipfast-a-popular-indie-hackers-product-in-drama-y2VgBkHu7b91rSCEEUSO)
+
+- [Next.js 15 中文文档](https://nextjscn.org/docs)
+
