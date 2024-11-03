@@ -9,10 +9,6 @@ import { siteConfig } from "@/config/site";
 const footerNavigation = {
   blog: [
     {
-      name: "赞助周刊",
-      href: "/thanks/?utm_source=gapismoney&utm_medium=referral",
-    },
-    {
       name: "J实验室",
       href: "https://weijunext.com/?utm_source=gapismoney&utm_medium=referral",
     },
@@ -21,11 +17,7 @@ const footerNavigation = {
       href: "https://nextjscn.org/?utm_source=gapismoney&utm_medium=referral",
     },
     {
-      name: "Next.js 实践教程",
-      href: "https://nextjs.weijunext.com/?utm_source=gapismoney&utm_medium=referral",
-    },
-    {
-      name: "Chrome插件全栈开发",
+      name: "全栈出海SaaS开发",
       href: "https://xiaobot.net/p/ship-ph-copilot?refer=1e5db497-8ed5-461b-af85-e71cb80e3787",
       rel: "noopener noreferrer nofollow",
     },
@@ -45,7 +37,6 @@ const footerNavigation = {
     },
   ],
   indieHacker: [
-    { name: "PH Copilot", href: "https://PHCopilot.AI/?utm_source=gapismoney" },
     {
       name: "独立开发者出海周刊",
       href: "https://gapis.money/?utm_source=gapismoney&utm_medium=referral",
@@ -56,13 +47,10 @@ const footerNavigation = {
     },
   ],
   tools: [
+    { name: "PH Copilot", href: "https://PHCopilot.AI/?utm_source=gapismoney" },
     {
       name: "Youtube中文配音",
       href: "https://yd.transduck.com/admin/signup?code=24796&utm_source=gapismoney&utm_medium=referral",
-    },
-    {
-      name: "抠图去背景",
-      href: "https://www.getimg.app/?utm_source=gapismoney&utm_medium=referral",
     },
     {
       name: "ChatHub",
