@@ -1,6 +1,6 @@
 "use client";
 
-import { docSearchConfig } from "@/config/docSearch";
+import { docSearchConfig } from "@/components/DocSearch/config";
 import "@docsearch/css";
 import { DocSearchModal, useDocSearchKeyboardEvents } from "@docsearch/react";
 import Link from "next/link";
