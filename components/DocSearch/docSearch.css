@@ -1,0 +1,84 @@
+.docSearch-btn {
+  --search-size: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--search-size);
+  white-space: nowrap;
+  background: var(--ds-gray-100);
+  border-radius: 6px;
+  padding: 0 6px 0 8px;
+  font-size: 14px;
+  font-family: var(--font-sans-fallback);
+  color: var(--ds-gray-700);
+  transition-property: background, color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+  box-sizing: border-box;
+}
+.docSearch-btn[data-variant="large"] {
+  width: 180px;
+  @apply border border-gray-600 focus:border-0 rounded-full
+}
+.docSearch-btn[data-variant="medium"] {
+  display: none;
+  @apply border border-gray-600 focus:border-0 rounded-full
+}
+.docSearch-btn[data-variant="small"] {
+  padding: 0;
+  justify-content: center;
+  width: var(--search-size);
+  background: none;
+  color: var(--ds-gray-1000);
+  display: none;
+}
+.docSearch-btn[data-variant="small"]:hover {
+  color: var(--ds-gray-1000);
+}
+.docSearch-btn[data-variant="small"] svg {
+  width: 24px;
+  height: 24px;
+}
+.docSearch-btn:hover {
+  color: var(--ds-gray-800);
+  background: var(--ds-gray-200);
+}
+.docSearch-btn kbd {
+  height: 20px;
+  line-height: 20px;
+  border-radius: 6px;
+  padding: 0 6px;
+  font-size: 12px;
+  color: var(--ds-gray-1000);
+  background: var(--ds-background-100);
+  font-weight: 500;
+  font-family: inherit;
+  box-shadow: var(--ds-shadow-border);
+  border: none;
+  margin-left: 16px;
+}
+.DocSearch-Commands {
+  display: none;
+}
+
+.DocSearch-Container {
+  z-index: 2000;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media (max-width: 1250px) {
+  .docSearch-btn[data-variant="large"] {
+    display: none;
+  }
+  .docSearch-btn[data-variant="medium"] {
+    display: flex;
+  }
+}
+@media (max-width: 1100px) {
+  .docSearch-btn[data-variant="medium"] {
+    display: none;
+  }
+  .docSearch-btn[data-variant="small"] {
+    display: flex;
+  }
+}
