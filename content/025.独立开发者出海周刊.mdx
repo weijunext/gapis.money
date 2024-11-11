@@ -1,0 +1,162 @@
+---
+title: 第25期：「idea分享」浏览器里的图片批处理工具构想
+slug: 2024-11-11_025
+date: 2024-11-11
+---
+
+<Aside showSponsor={0}>
+**\<信息差——独立开发者出海周刊介绍\>**
+
+Knowledge is power, info-gap is money!
+
+记录**独立开发者出海**用得到的优质信息，帮助独立开发者**缩小信息差**，每周一发布。
+
+周刊开放投稿，欢迎[投稿](https://github.com/weijunext/gapis.money/issues)以下内容：
+- 开源项目
+- 创意工具/生产力工具
+- 独立开发者出海教程
+- 优质文章/推文/视频
+
+本周刊由[@weijunext](https://x.com/intent/follow?screen_name=weijunext)运营
+
+
+赞助列表：
+- [Mkdirs](https://mkdirs.com/): 功能完善的导航站模板，集成了登录、支付、博客等功能，有人最快花了2小时就发布了自己的导航站。
+- [Next.js 中文文档](https://nextjscn.org/docs?utm_source=gapis.money): Next.js v15 最新中文文档，网站样式和官网一样，创造沉浸式Next.js中文学习体验。
+- [《Chrome插件全栈开发实战》](https://xiaobot.net/p/ship-ph-copilot?refer=1e5db497-8ed5-461b-af85-e71cb80e3787): 真实出海项目的实战教学课，帮助你半个月内成为全栈出海工程师。
+</Aside>
+
+## 「idea分享」浏览器里的图片批处理工具构想
+
+因为这周刊内容需要配图，我每周发布周刊的时候都要处理不少网页图片。今天在右键保存图片的时候，在想为什么我还需要经历"右键保存 -> 打开压缩工具 -> 调整 -> 重新放到静态图片路径下"这样繁琐的步骤？
+
+这让我萌生了一个想法——做一个真正懂用户的图片处理插件。以下是和 Cluade 讨论这个 idea 得到的一些我认为正确的信息，如果有人看好这类产品，欢迎参考下面的分享，如果开发出来了我帮你宣传。
+
+🔍 痛点分析：
+  1. 现有工具都是单一功能：要么只能下载，要么只能压缩
+  2. 处理流程分散：需要在多个软件/网站间切换
+  3. 无法批量：特别是处理文章/设计稿时非常耗时
+  4. 格式受限：不同平台对图片格式/大小都有自己的规则
+
+💡 解决方案：
+  - 核心功能：自动识别页面所有图片资源（包括常规图片、背景图、Meta信息中的图片等）
+  - 一站式处理：在插件内即可完成不同图片类型的压缩、格式转换等操作
+  - 智能优化：根据不同使用场景（社交平台、博客、电商等）自动推荐最佳处理方案
+  - 历史记录：所有处理过的图片都有备份，再次需要时直接调用
+
+🎯 目标用户：
+  1. 内容创作者：需要大量处理文章配图
+  2. 设计师：经常需要收集和处理灵感素材
+  3. 产品经理：写PRD需要大量截图和标注
+  4. 普通用户：社交分享、图片存档
+
+💰 商业模式构想：
+  - 基础版：免费提供压缩和简单处理功能
+  - Pro版：
+    * 批量处理无限制
+    * 自定义预设
+    * 云端存储
+  - 团队版：
+    * 统一管理
+    * API 接口
+    * 自定义规则
+    * 品牌水印
+
+🛠 技术方案：
+  - 前端：
+    - Chrome Extension 框架
+    - React/Vue 构建 UI
+    - WebAssembly 处理本地预览
+  - 后端：
+    - Node.js 处理主要逻辑
+    - Sharp/ImageMagick 提供核心图片处理
+    - Redis 缓存处理记录
+    - AWS S3 存储
+  - 创新点：
+    - 使用 AI 识别图片场景，智能推荐处理方案
+    - WebAssembly 实现本地快速预览
+    - 渐进式加载提升体验
+
+💡 未来可能性：
+  - 对接设计工具（Figma/PS）的插件系统
+  - 发展成为创作者工作流平台
+  - AI智能图片增强
+  - NFT作品快速发布
+
+我相信这个工具会成为每个创作者、独立开发者的浏览器必装插件，如果你也对这个想法感兴趣，欢迎在评论区讨论，或者直接动手实现它。
+
+## 开源项目
+
+- [Academic Agents V2 (学术写作智能助手)](https://github.com/anarchysaiko/academicagentsV2)
+
+  Academic Agents V2 是一个基于微软autogen框架开发的学术论文写作辅助工具。它通过多个专业化的智能代理（Agents）来协助用户完成从选题到大纲的论文写作过程。
+
+  ![academicagentsv2](/assets/025/academicagentsv2.webp)
+
+- [AdvancedLivePortrait-WebUI](https://github.com/jhj0517/AdvancedLivePortrait-WebUI)
+
+  这个工具可以手动精准修改照片中人物的眼睛、嘴巴等五官的形态。
+
+  ![advancedliveportrait](/assets/025/advancedliveportrait.gif)
+
+- [startup-page](https://github.com/timothypholmes/startup-page)
+
+  一个美观好用的浏览器首页插件商业价值非常大，这个仓库提供了一个 Web 版的浏览器首页设计，改改就能做成插件。希望有人可以实践一下。
+
+  ![startup-page](/assets/025/startup-page.webp)
+
+- [certimate](https://github.com/usual2970/certimate)
+
+  开源的SSL证书管理工具，可以帮助你自动申请、部署SSL证书，并在证书即将过期时自动续期。
+
+  ![certimate](/assets/025/certimate.webp)
+
+- [pdf-extract-api](https://github.com/CatchTheTornado/pdf-extract-api)
+
+  使用 OCR 技术和 Ollama 支持的模型提供 PDF 和图片的提取和解析 API，可以把 PDF 和图片转换为结构化的 JSON 或 Markdown 格式。
+
+  ![pdf-extract-api](/assets/025/pdf-extract-api.webp)
+
+- [腾讯开源大型MoE模型](https://llm.hunyuan.tencent.com/)
+
+  由腾讯开发的开源业界参数规模最大、效果最好的transformer结构的 MoE 模型，是腾讯元宝、微信读书、QQ音乐的同款模型，而且支持免费商用。这波开源太良心了！
+
+  - 开源地址：https://github.com/Tencent/Tencent-Hunyuan-Large
+  - Hugging Face：https://huggingface.co/tencent/Tencent-Hunyuan-Large
+
+## 工具推荐
+
+- [YouTube Transcript Downloader](https://notegpt.io/youtube-transcript-downloader)
+
+  使用 YouTube 字幕下载器，3秒内即可获取 AI 生成的字幕！下载你所需的任何语言或格式的 YouTube 字幕。对于想节省时间、轻松获取关键信息的语言学习者、内容创作者和研究人员来说非常理想。免费且易于使用的工具，适合所有人！
+
+  ![youtube-transcript-downloader](/assets/025/youtube-transcript-downloader.webp)
+
+- [OnLook](https://onlook.dev/)
+
+  OnLook 将 Figma 式的可视化设计体验与 React 开发完美结合，让开发者能够直观地编辑界面的同时自动生成可靠的代码，产品在本地运行，仅需一条命令即可使用。
+
+  ![onlook](/assets/025/onlook.avif)
+
+- [OpenAlternative](https://openalternative.co/)
+
+  一个专门收集和推荐开源软件替代品的网站，帮助用户寻找流行付费SaaS产品的开源替代方案。
+
+  ![openalternative](/assets/025/openalternative.webp)
+
+## 出海/技术教程
+
+- [独立出海开发者国外银行选择之Found.com](https://mp.weixin.qq.com/s/TnEZa3zi3W2wLKjBunq7yw)
+
+- [如果你有开源项目使用了 Cloudflare， 可以申请他们的 Alexandria 计划。](https://x.com/ccbikai/status/1842419953661509816)
+
+  Alexandria 可以为你提供更多免费的 Pro 套餐、Workers 请求数、 R2 存储空间、增强 Zero Trust 访问。
+
+
+## 优质文章/推文/视频/资源
+
+- [三花 AI 写真摆摊工作流](https://openart.ai/workflows/xJZCcVlFOQZIWswRUhjo)
+
+  功能包括文生图、图生图、换脸、风格迁移、人脸增强、调试等。
+
+- [以漫画的形式来科普 DNS 运作的原理](https://howdns.works/)
