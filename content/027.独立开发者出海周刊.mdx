@@ -1,0 +1,139 @@
+---
+title: 第27期：机器如人，人如机器？
+slug: 2024-11-23_027
+date: 2024-11-23
+---
+
+<Aside showSponsor={0}>
+**\<信息差——独立开发者出海周刊介绍\>**
+
+Knowledge is power, info-gap is money!
+
+记录**独立开发者出海**用得到的优质信息，帮助独立开发者**缩小信息差**，每周一发布。
+
+周刊开放投稿，欢迎[投稿](https://github.com/weijunext/gapis.money/issues)以下内容：
+- 开源项目
+- 创意工具/生产力工具
+- 独立开发者出海教程
+- 优质文章/推文/视频
+
+本周刊由[@weijunext](https://x.com/intent/follow?screen_name=weijunext)运营
+
+
+赞助列表：
+- [Mkdirs](https://mkdirs.com/): 功能完善的导航站模板，集成了登录、支付、博客等功能，有人最快花了2小时就发布了自己的导航站。
+- [Next.js 中文文档](https://nextjscn.org/docs?utm_source=gapis.money): Next.js v15 最新中文文档，网站样式和官网一样，创造沉浸式Next.js中文学习体验。
+- [《Chrome插件全栈开发实战》](https://xiaobot.net/p/ship-ph-copilot?refer=1e5db497-8ed5-461b-af85-e71cb80e3787): 真实出海项目的实战教学课，帮助你半个月内成为全栈出海工程师。
+</Aside>
+
+## 机器如人，人如机器？
+
+昨天，李继刚在即刻发了一条动态：
+
+<img src="/assets/027/ljg.webp" alt="机器如人，人如机器？" width="400px" className="rounded border-4 border-main" />
+
+我给这条动态点赞了，因为前几天我也有类似的感觉。那时候，我要用一个不熟悉的 Shadcn 组件，直接在 Cursor 上面让 Claude 实现我要的需求，写完我才反应过来，如果这个功能是 AI 在我完全不会的情况下写出来，那还算是我开发的功能吗？显然不能算。
+
+如果我把这个功能归功于自己开发，并且在社交媒体上宣传「我10秒钟做好xxx功能」，那么是不是我和 AI 转换角色了？AI 成了大脑，它在思考，而我成了那个「工具」，做着重复性工作——不断按 tab 键，然后发布社交媒体。
+
+如果热衷于把 AI 的生产成果当作自己的成果，会发现掉入即时满足的陷阱：
+- 表层理解：过度依赖 AI 生成代码，导致对问题的理解停留在表面
+- 能力退化：解决问题的思维肌肉因为缺乏锻炼而逐渐萎缩
+- 虚假自信：AI 生成的代码让我们误以为自己已经掌握了某项技术
+
+其实深度使用 AI 编程后，很容易发现 AI 可以完美实现单一的功能，但是对于复杂的需求是无能为力的，它需要人类的大脑来规划、拆分。比如，最近我用 AI 做自动翻译和校验的脚本，一旦脚本超过500行，就跟屎山一样，我改不动，AI 也改不动。
+
+“AI 有局限性”是互联网上的共识，也就是说，人类需要保持自己的专业性，才能真正指挥好 AI。如果连基本功都丢失了，满足于即时反馈，结果很可能变成我们和 AI 的角色互换。
+
+因此，我也在即刻写下一句话，与君共勉：
+
+<img src="/assets/027/cp.webp" alt="机器如人，人如机器？" width="400px" className="rounded border-4 border-main" />
+
+## 开源项目
+
+- [PromptFix](https://github.com/yeates/PromptFix)
+
+  一个效果很好的 AI 图像修复工具，支持多种修复功能：
+    - 图像上色
+    - 低光照增强
+    - 水印移除
+    - 物体移除
+    - 积雪移除
+    - 去雾
+    - 去模糊
+  预训练模型权重可以从 HuggingFace 下载，开源仓库提供了完整的训练和推理代码。
+
+  ![promptfix](/assets/027/promptfix.gif)
+
+- [JSON i18n Translation Tool](https://github.com/ViggoZ/json-translate)
+
+  一款支持40+语言的JSON翻译工具，作者开源了完整的 AI 辅助 PRD 文档 + 基于 Next.js 的源码，对于不会用写代码但是想开发产品的朋友有很大参考价值。
+
+  ![JSON](/assets/027/json-translator.webp)
+
+- [Better Auth](https://github.com/better-auth/better-auth)
+
+  又出来一个新的授权库。Better Auth 是一个框架无关的 TypeScript 认证（和授权）库。它开箱即用地提供了一套完整的功能特性，并包含一个插件生态系统，能让你用最少的代码在短时间内添加高级功能。
+
+  ![better-auth](/assets/027/better-auth.webp)
+
+- [Markdown To Poster](https://github.com/gcui-art/markdown-to-image)
+
+  这个 React 组件用于将 Markdown 渲染为漂亮的社交媒体图片。此外，该项目还包括一个内置的 WEB Editor，一键部署后，可以当做 Markdown 转海报图片在线编辑器使用。
+
+  ![markdown-to-image](/assets/027/markdown-to-image.webp)
+
+- [MinerU](https://github.com/opendatalab/MinerU)
+
+  MinerU 诞生于 InternLM 的预训练过程中，是一个高质量的 PDF 转换工具，它能够：
+    1. 保留原 PDF 文档的完整结构（包括标题、段落、列表等）
+    2. 智能提取各类内容（包括文字、图片及其说明文字、表格及其标题和数学公式）
+    3. 自动格式转换
+    4. 内置智能 OCR 功能
+    5. 支持多种输出格式，如 Markdown、JSON 等
+
+- [Thinking-Claude](https://github.com/richards199999/Thinking-Claude)
+
+  给 Claude 也加上思维链，回答会把推理过程也显示出来，精准度也变得更高了。
+
+  使用方法：
+    1. 从 model_instructions 文件夹复制最新版本的思考协议
+    2. 在 Claude.ai 中创建新项目
+    3. 将指令粘贴到自定义指令部分
+    4. 安装浏览器扩展（支持 Chrome，Firefox 版本在开发中）
+
+
+## 工具推荐
+
+- [GitHub Receipt](https://gitreceipt.vercel.app/)
+
+  这个有意思，用你的 GitHub 信息生成一张收据。
+
+  ![github-receipt](/assets/027/github-receipt.webp)
+
+- [onlook](https://onlook.dev/)
+
+  让你像 Figma 一样可视化的设计你的 React UI，在本地运行，还集成了Tailwind CSS。
+
+  ![onlook](/assets/027/onlook.webp)
+
+- [Git Cheat Sheet](https://wizardzines.com/git-cheat-sheet.pdf)
+
+  ![git-cheat-sheet](/assets/027/git-cheat-sheet.webp)
+
+
+## 出海教程/技术教程/资源分享
+
+- [如何在Stripe中开通支付宝和微信订阅支付？](https://zhuanlan.zhihu.com/p/5399191484)
+
+- [独立开发者之海外公司注册](https://meepo.me/du-li-kai-fa-zhe-zhi-hai-wai-gong-si-zhu-ce/)
+
+- [Pormpt分享：落地页文案与设计](https://m.okjike.com/originalPosts/67395d108dc13469670b348b)
+
+- [GitHub Actions 进阶：如何通过用户输入自定义工作流参数](https://blog.axiaoxin.com/post/dynamic-parameters-in-github-actions/)
+
+  > 作者：我GitHub actions拿来用的最多的除了自动部署外，就是拿来跑爬虫，手动设置一些规则，点个按钮就能有一个国外IP的爬虫，对于一些对国内请求限频而不限国外请求的来说很好用，而且可以开任意多个，约等于一个分布式爬虫集群了（剩余使用时长足够的话）
+
+- [可视化代码小技巧：windsurf & cursor 💻](https://x.com/linearuncle/status/1859030244633858329)
+
+- [Claude一键直出 AI 简历！](https://mp.weixin.qq.com/s/IdMpz2DIWM1g1b3CJxgISA)
