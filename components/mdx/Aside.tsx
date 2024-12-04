@@ -46,7 +46,7 @@ export function Aside({
             </li>
             <li>
               <Link
-                href="https://xiaobot.net/p/ship-ph-copilot?refer=1e5db497-8ed5-461b-af85-e71cb80e3787"
+                href="https://ship.weijunext.com/"
                 title="PHCopilot.AI"
                 target="_blank"
                 className="link-underline"
