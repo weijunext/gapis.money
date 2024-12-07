@@ -1,10 +1,11 @@
 "use client";
 
-import { Divider, Link } from "@nextui-org/react";
+import { Divider } from "@nextui-org/react";
 import React from "react";
 
 import FooterLinks from "@/components/footer/FooterLinks";
 import { siteConfig } from "@/config/site";
+import Link from "next/link";
 
 const footerNavigation = {
   blog: [
@@ -77,11 +78,11 @@ export default function Footer() {
           {items.map((item) => (
             <li key={item.name}>
               <Link
-                className="text-default-500"
+                className="text-default-500 text-sm"
                 href={item.href}
                 title={item.name}
                 target="_blank"
-                size="sm"
+                prefetch={false}
                 rel={item.rel || "noopener noreferrer"}
               >
                 {item.name}
@@ -145,6 +146,7 @@ export default function Footer() {
             href={authors[0].twitter || authors[0].url}
             title={authors[0].name}
             target="_blank"
+            prefetch={false}
           >
             {authors[0].name}
           </Link>{" "}

@@ -39,6 +39,7 @@ export function Aside({
                 title="PHCopilot.AI"
                 target="_blank"
                 className="link-underline"
+                prefetch={false}
               >
                 PHCopilot.AI
               </Link>
@@ -51,6 +52,7 @@ export function Aside({
                 target="_blank"
                 className="link-underline"
                 rel="noopener norefferer nofollow"
+                prefetch={false}
               >
                 《Chrome插件全栈开发实战》
               </Link>
@@ -62,6 +64,7 @@ export function Aside({
                 title="Next.js 中文文档"
                 target="_blank"
                 className="link-underline"
+                prefetch={false}
               >
                 Next.js 中文文档
               </Link>

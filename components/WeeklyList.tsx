@@ -31,6 +31,7 @@ export default async function WeeklyList({
           <Link
             href={`/${sectionType || "weekly"}/${post.metadata.slug}`}
             title={post.title}
+            prefetch={false}
             className="link-default w-full transition-colors duration-500 ease-in-out flex justify-start items-center"
           >
             {post.metadata.title}

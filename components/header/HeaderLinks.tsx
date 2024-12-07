@@ -12,6 +12,7 @@ const HeaderLinks = () => {
           key={link.name}
           href={link.href}
           title={link.name}
+          prefetch={false}
           target="_blank"
           rel="noopener norefferer nofollow"
           className="mx-3 flex items-center w-max"

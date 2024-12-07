@@ -101,6 +101,7 @@ export default async function WeeklyDetailsPage({ params }: Props) {
               target="_blank"
               rel="noopener noreferrer nofollow"
               title="版权声明"
+              prefetch={false}
             >
               <span className="hidden lg:flex items-center">
                 版权声明
@@ -117,6 +118,7 @@ export default async function WeeklyDetailsPage({ params }: Props) {
                 href={prevPost.metadata.slug}
                 className="link-underline"
                 title="上一篇"
+                prefetch={false}
               >
                 上一篇
               </Link>
@@ -128,16 +130,27 @@ export default async function WeeklyDetailsPage({ params }: Props) {
                 href={nextPost.metadata.slug}
                 className="link-underline"
                 title="下一篇"
+                prefetch={false}
               >
                 下一篇
               </Link>
             ) : (
               <></>
             )}
-            <Link href="/" className="link-underline" title="去首页">
+            <Link
+              href="/"
+              className="link-underline"
+              title="去首页"
+              prefetch={false}
+            >
               去首页
             </Link>
-            <Link href="/rss.xml" className="link-underline" title="RSS">
+            <Link
+              href="/rss.xml"
+              className="link-underline"
+              title="RSS"
+              prefetch={false}
+            >
               RSS
             </Link>
             <Link
@@ -146,6 +159,7 @@ export default async function WeeklyDetailsPage({ params }: Props) {
               rel="noopener noreferrer nofollow"
               className="link-underline"
               title="Twitter/X"
+              prefetch={false}
             >
               Twitter/X
             </Link>

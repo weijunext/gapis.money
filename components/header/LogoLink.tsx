@@ -8,6 +8,7 @@ const LogoLink = () => {
       href="/"
       className="flex items-center space-x-1 font-bold"
       title={siteConfig.description}
+      prefetch={false}
     >
       <Image
         alt={siteConfig.name}

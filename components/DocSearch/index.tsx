@@ -60,7 +60,9 @@ export default function CustomDocSearch() {
             onClose={onClose}
             placeholder="搜索文档"
             hitComponent={({ hit, children }) => (
-              <Link href={hit.url}>{children}</Link>
+              <Link href={hit.url} prefetch={false}>
+                {children}
+              </Link>
             )}
           />,
           document.body

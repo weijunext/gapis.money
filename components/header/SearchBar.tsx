@@ -116,6 +116,7 @@ const SearchBar = () => {
                 // get the right url
                 href={`/article/${result.id.split("_")[0]}`}
                 onClick={finishSearch}
+                prefetch={false}
               >
                 <li
                   className={cn(

@@ -13,6 +13,7 @@ const HeaderMenu = () => {
         href="/"
         title="周刊"
         className={cn("link-default", pathname === "/" ? "link-underline" : "")}
+        prefetch={false}
       >
         周刊
       </Link>
@@ -24,11 +25,17 @@ const HeaderMenu = () => {
           "link-default",
           pathname === "/blogs" ? "link-underline" : ""
         )}
+        prefetch={false}
       >
         博客
       </Link>
       <div className="hidden md:block text-gray-600">|</div>
-      <Link href="/rss.xml" title="RSS" className="link-default">
+      <Link
+        href="/rss.xml"
+        title="RSS"
+        className="link-default"
+        prefetch={false}
+      >
         RSS
       </Link>
       <div className="hidden md:block text-gray-600">|</div>
@@ -39,6 +46,7 @@ const HeaderMenu = () => {
         className="link-default"
         target="_blank"
         rel="noopener noreferrer nofollow"
+        prefetch={false}
       >
         邮件订阅
       </Link>
