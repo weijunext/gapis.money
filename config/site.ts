@@ -1,7 +1,7 @@
 import { SiteConfig } from "@/types/siteConfig";
 import { BsGithub, BsTwitterX, BsWechat } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { SiJuejin, SiTwitter } from "react-icons/si";
+import { SiJuejin } from "react-icons/si";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL;
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME;
@@ -37,7 +37,6 @@ const baseSiteConfig = {
   ],
   footerLinks: [
     { name: 'twitter', href: "https://x.com/weijunext", icon: BsTwitterX },
-    { name: 'twitter_en', href: "https://x.com/wayne_dev", icon: SiTwitter },
     { name: 'github', href: "https://github.com/weijunext/", icon: BsGithub },
     // { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee },
     { name: 'juejin', href: "https://juejin.cn/user/26044008768029", icon: SiJuejin },
