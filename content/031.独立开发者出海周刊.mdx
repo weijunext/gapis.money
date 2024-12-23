@@ -1,0 +1,120 @@
+---
+title: 独立开发者出海周刊（第31期）
+slug: 2024-12-23_031
+date: 2024-12-23
+---
+
+<Aside showSponsor={0}>
+**\<信息差——独立开发者出海周刊介绍\>**
+
+Knowledge is power, info-gap is money!
+
+记录**独立开发者出海**用得到的优质信息，帮助独立开发者**缩小信息差**，每周一发布。
+
+周刊开放投稿，欢迎[投稿](https://github.com/weijunext/gapis.money/issues)以下内容：
+- 开源项目
+- 创意工具/生产力工具
+- 独立开发者出海教程
+- 优质文章/推文/视频
+
+本周刊由[@weijunext](https://x.com/intent/follow?screen_name=weijunext)运营
+
+赞助列表：
+- [Mkdirs](https://mkdirs.com?via=share/): 功能完善的导航站模板，集成了登录、支付、博客等功能，有人最快花了2小时就发布了自己的导航站。
+- [Next.js 中文文档](https://nextjscn.org/docs?utm_source=gapis.money): Next.js v15 最新中文文档，网站样式和官网一样，创造沉浸式Next.js中文学习体验。
+- [《Chrome插件全栈开发实战》](https://ship.weijunext.com/): 真实出海项目的实战教学课，帮助你半个月内成为全栈出海工程师。
+</Aside>
+
+> 下周开始休刊，农历年后（2月10日）复刊，这期间会做一些周刊升级的工作。
+
+## 开源项目
+
+- [Chrome AI Playground](https://github.com/oslook/chrome-ai-playground)
+
+  Chrome浏览器最新版本提供了Gemini Nano的本地AI模型的，具备一些常用功能，该项目是通过浏览直接访问和体验这些功能的操作环境，推荐大家使用。Chrome AI 和 Gemini Nano 的综合平台，提供全面且用户友好的 API 支持。
+
+  提供的功能：
+    - Prompt - 交互式聊天界面用于测试提示
+    - Summarize - 文本总结功能
+    - Translate - 语言翻译功能
+    - Detect Language - 自动语言检测
+    - Writer - 人工智能驱动的写作支持
+    - ReWriter - 内容重写和改进
+
+  ![chrome-ai-playground](/assets/031/chrome-ai-playground.webp)
+
+- [coreychiu-portfolio-template](https://github.com/iAmCorey/coreychiu-portfolio-template)
+
+  一个很好看的 portfolio 模板，可以用来展示个人信息和产品。
+
+  ![portfolio](/assets/031/portfolio.webp)
+
+- [Artab](https://github.com/get-artab/artab)
+
+  这是一个新标签页扩展，slogan是“让有史以来最好的艺术作品出现在你的新标签页”。
+
+  插件发布一周多，就有将近 1000 个用户，说明「美」也是一种刚需。这是一个开源项目，你可以基于开源代码，做一款另一种「美」的插件。
+
+  ![arttab](/assets/031/arttab.webp)
+
+- [Image Background Remover](https://github.com/addyosmani/bg-remove)
+
+  想做去除图片背景工具的朋友可以来看看这个仓库了，线上地址实测去除背景的效果不错。
+
+  背后的原理是通过 Transformers.js 调用机器学习模型在本地处理媒体文件。因为图片不会被上传至服务器，所以从用户角度也很友好。
+
+  ![bg-addy-ie](/assets/031/bg-addy-ie.webp)
+
+- [Admin Dashboard UI](https://github.com/satnaing/shadcn-admin)
+
+  一个基于 shadcn-ui 开发的管理后台，可以基于这个仓库来做自己的需求。
+
+  ![shadcn-admin](/assets/031/shadcn-admin.webp)
+
+- [auto-i18n-next-lingui-tiny-demo](https://github.com/HackerQED/auto-i18n-next-lingui-tiny-demo)
+
+  lingui 一个 AI 翻译友好的 i18n 库，配合脚本做自动翻译。目前有小坑，需要和 Next.js 的版本完全匹配，要比较专业的前端知识才能排错，所以作者创建了这个 demo，这样后来人可以少走弯路，直接使用。并且 README.md 提供了完整的命令和输出供大家参考。
+
+- [Qwen2-Audio](https://github.com/Lollipop/Qwen2-Audio)
+
+  阿里巴巴云计算推出的大型音频语言模型，能接受各种音频信号输入，并根据语音指令进行音频分析或直接文本回复。
+
+## 工具推荐
+
+- [帽子云](https://www.maoziyun.com/)
+
+  来自群友的作品，是一个 GitHub Pages / Cloudflare Pages 国产替代方案，集成化的静态网站快速创建平台，旨在解决国内用户部署网站时面临的种种困难。
+
+  产品优点：
+    - 优化亚洲地区访问线路，配备自建 CDN 边缘节点，实现极速加载。
+    - 基于 etcd 构建高可用架构，提供稳定支持。
+    - 集成 GitHub 自动化持续部署。
+    - 内置 HTTPS，支持多环境配置。
+    - 自定义域名与反向代理功能，满足多样化需求。
+    - 附带流量数据分析功能，帮助开发者深入了解流量趋势。
+
+  ![maoziyun](/assets/031/maoziyun.avif)
+
+- [免费 AI 音效生成器](https://tiktokvoice.net/en/sounds-effect)
+
+  免费 AI 音效生成器，适合用于小游戏开发，创意视频和广告，白噪音等场景。
+
+  ![ai-sounds](/assets/031/ai-sounds.webp)
+
+- [Clip a Frame](https://chromewebstore.google.com/detail/clip-a-frame/gfckafknbbnfiheldolhfohhlmdpdkpa)
+
+  这是一个可以快捷截图视频帧的 Chrome 扩展，按下 S 键就可以把当前帧保存到剪贴板，按 Shift + S 可以保存成文件，目前支持 YouTube 和 Bilibili。
+
+- [MCP Hub](https://www.aimcp.info/)
+
+  针对 Claude 推出的 MCP 协议，搭建的 MCP 工具导航站。
+
+
+## 出海教程/技术教程/资源分享
+
+- [SaaS 免费试用策略终极指南](https://m.okjike.com/originalPosts/675fbdc68d6dd8c09ce87d60)
+
+- [关于远程工作的相关资料，包括工作保障、财务税务问题、团队管理问题](https://github.com/greatghoul/remote-working)
+
+- [把 Gemini 2.0 搬进 Cursor](https://x.com/eviljer/status/1868683954146115589)
+
