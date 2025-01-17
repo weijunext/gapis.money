@@ -45,17 +45,26 @@ const footerNavigation = {
     {
       name: "Indie Hacker Tools",
       href: "https://github.com/weijunext/indie-hacker-tools",
+      rel: "noopener noreferrer nofollow",
     },
   ],
   tools: [
-    { name: "PH Copilot", href: "https://PHCopilot.AI/?utm_source=gapismoney" },
     {
-      name: "Youtube中文配音",
-      href: "https://yd.transduck.com/admin/signup?code=24796&utm_source=gapismoney&utm_medium=referral",
+      name: "Next Idea",
+      href: "https://nextidea.dev/?utm_source=gapis.money",
+    },
+    {
+      name: "Next Idea NewTab",
+      href: "https://newtab.nextidea.dev/?utm_source=gapis.money",
+    },
+    {
+      name: "OG Image Generator",
+      href: "https://ogimage.click/?utm_source=gapis.money",
     },
     {
       name: "ChatHub",
       href: "https://app.chathub.gg/?ref=gapismoney",
+      rel: "noopener noreferrer nofollow",
     },
   ],
 };
