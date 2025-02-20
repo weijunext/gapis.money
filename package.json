@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "postbuild": "node ./generateRSS.mjs & next-sitemap",
+    "postbuild": "node ./generateRSS.mjs && next-sitemap",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
