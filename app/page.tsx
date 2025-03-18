@@ -43,12 +43,12 @@ export default async function Home() {
             <div className="flex items-center space-x-2">
               <span className="text-yellow-600">🧩</span>
               <a
-                href="https://newtab.nextidea.dev"
-                title="Next Idea NewTab"
+                href="https://ntab.dev"
+                title="nTab"
                 target="_blank"
                 className="text-blue-500 hover:text-blue-600 underline font-medium"
               >
-                新标签页插件：Next Idea NewTab
+                新标签页插件：nTab
               </a>
               <span className="text-gray-600">
                 - 让开发者、产品经历信息获取效率和办公效率更高

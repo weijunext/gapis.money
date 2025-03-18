@@ -54,8 +54,8 @@ const footerNavigation = {
       href: "https://nextidea.dev/?utm_source=gapis.money",
     },
     {
-      name: "Next Idea NewTab",
-      href: "https://newtab.nextidea.dev/?utm_source=gapis.money",
+      name: "nTab",
+      href: "https://ntab.dev/?utm_source=gapis.money",
     },
     {
       name: "OG Image Generator",
