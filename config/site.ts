@@ -12,13 +12,13 @@ const TWITTER_USERNAME = process.env.NEXT_PUBLIC_TWITTER_USERNAME;
 const baseSiteConfig = {
   name: SITE_NAME || '信息差——独立开发者出海周刊',
   description: SITE_DESCRIPTION || 'Knowledge is power, info-gap is money!「信息差——独立开发者出海周刊」是一个帮助独立开发者缩小信息差的技术周刊。',
-  url: SITE_URL || 'https://gapis.money',
+  url: SITE_URL || 'https://gap.weijunext.com',
   metadataBase: '/',
   keywords: ["信息差", "indie hacker", "独立开发者", "周刊", "独立开发者出海"],
   authors: [
     {
       name: AUTHOR_NAME || 'weijunext',
-      url: SITE_URL || 'https://gapis.money',
+      url: SITE_URL || 'https://gap.weijunext.com',
       twitter: `https://x.com/${TWITTER_USERNAME || 'weijunext'}`,
     }
   ],
@@ -30,8 +30,8 @@ const baseSiteConfig = {
     apple: "/logo.png",
   },
   headerLinks: [
-    { name: 'issues', text: '投稿⤴', href: "https://github.com/weijunext/gapis.money/issues" },
-    // { name: 'repo', href: "https://github.com/weijunext/gapis.money", icon: BsGithub },
+    { name: 'issues', text: '投稿⤴', href: "https://github.com/weijunext/gap.weijunext.com/issues" },
+    // { name: 'repo', href: "https://github.com/weijunext/gap.weijunext.com", icon: BsGithub },
     { name: 'twitter', href: "https://x.com/weijunext", icon: BsTwitterX },
     // { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee }
   ],
@@ -45,7 +45,7 @@ const baseSiteConfig = {
   ],
   footerProducts: [
     // { url: 'https://weijunext.com/', name: 'J实验室' },
-    // { url: 'https://gapis.money/', name: '独立开发者出海周刊' },
+    // { url: 'https://gap.weijunext.com/', name: '独立开发者出海周刊' },
     // { url: 'https://smartexcel.cc/', name: 'Smart Excel' },
     // { url: 'https://weekly.weijunext.com/', name: 'Weekly Boilerplate' },
     // { url: 'https://landingpage.weijunext.com/', name: 'Landing Page Boilerplate' },

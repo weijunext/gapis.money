@@ -40,7 +40,7 @@ const footerNavigation = {
   indieHacker: [
     {
       name: "独立开发者出海周刊",
-      href: "https://gapis.money/?utm_source=gapismoney&utm_medium=referral",
+      href: "https://gap.weijunext.com/?utm_source=gapismoney&utm_medium=referral",
     },
     {
       name: "Indie Hacker Tools",
@@ -51,15 +51,15 @@ const footerNavigation = {
   tools: [
     {
       name: "Next Idea",
-      href: "https://nextidea.dev/?utm_source=gapis.money",
+      href: "https://nextidea.dev/?utm_source=gap.weijunext.com",
     },
     {
       name: "nTab",
-      href: "https://ntab.dev/?utm_source=gapis.money",
+      href: "https://ntab.dev/?utm_source=gap.weijunext.com",
     },
     {
       name: "OG Image Generator",
-      href: "https://ogimage.click/?utm_source=gapis.money",
+      href: "https://ogimage.click/?utm_source=gap.weijunext.com",
     },
     {
       name: "ChatHub",

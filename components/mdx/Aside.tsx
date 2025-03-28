@@ -35,7 +35,7 @@ export function Aside({
             <br />
             <li>
               <Link
-                href="https://PHCopilot.AI/?utm_source=gapis.money"
+                href="https://PHCopilot.AI/?utm_source=gap.weijunext.com"
                 title="PHCopilot.AI"
                 target="_blank"
                 className="link-underline"
@@ -60,7 +60,7 @@ export function Aside({
             </li>
             <li>
               <Link
-                href="https://nextjscn.org/docs?utm_source=gapis.money"
+                href="https://nextjscn.org/docs?utm_source=gap.weijunext.com"
                 title="Next.js 中文文档"
                 target="_blank"
                 className="link-underline"
