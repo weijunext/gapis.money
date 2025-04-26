@@ -24,24 +24,11 @@ const footerNavigation = {
     },
   ],
   openSource: [
-    {
-      name: "Smart Excel AI",
-      href: "https://smartexcel.cc/?utm_source=gapismoney&utm_medium=referral",
-    },
-    {
-      name: "Landing Page Boilerplate",
-      href: "https://landingpage.weijunext.com/?utm_source=gapismoney&utm_medium=referral",
-    },
-    {
-      name: "Weekly Boilerplate",
-      href: "https://weekly.weijunext.com/?utm_source=gapismoney&utm_medium=referral",
-    },
+    { name: "Next.js SaaS 全栈模板", href: "https://nexty.dev/" },
+    { name: "Next 多语言模板", href: "https://nextforge.dev/" },
+    { name: "博客模板", href: "https://weekly.weijunext.com/" },
   ],
   indieHacker: [
-    {
-      name: "独立开发者出海周刊",
-      href: "https://gap.weijunext.com/?utm_source=gapismoney&utm_medium=referral",
-    },
     {
       name: "Indie Hacker Tools",
       href: "https://github.com/weijunext/indie-hacker-tools",
@@ -49,10 +36,6 @@ const footerNavigation = {
     },
   ],
   tools: [
-    {
-      name: "Next Idea",
-      href: "https://nextidea.dev/?utm_source=gap.weijunext.com",
-    },
     {
       name: "nTab",
       href: "https://ntab.dev/?utm_source=gap.weijunext.com",

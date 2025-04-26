@@ -29,7 +29,7 @@ const HeaderMenu = () => {
       >
         博客
       </Link>
-      <div className="hidden md:block text-gray-600">|</div>
+      {/* <div className="hidden md:block text-gray-600">|</div>
       <Link
         href="/rss.xml"
         title="RSS"
@@ -49,7 +49,7 @@ const HeaderMenu = () => {
         prefetch={false}
       >
         邮件订阅
-      </Link>
+      </Link> */}
     </>
   );
 };

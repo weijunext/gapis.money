@@ -41,9 +41,9 @@ export function Aside({
                 className="link-underline"
                 prefetch={false}
               >
-                PHCopilot.AI
+                Nexty.dev
               </Link>
-              ：快速生成 ProductHunt 高质量打榜评论，轻松升级金牌账号。
+              ：多场景 Next.js SaaS 全栈模板
             </li>
             <li>
               <Link
