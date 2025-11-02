@@ -23,24 +23,6 @@ export default async function Home() {
           </h3>
           <div className="space-y-3">
             <div className="flex items-center space-x-2">
-              <img
-                src="/next_idea_logo.svg"
-                alt="Next Idea"
-                className="w-5 h-5"
-              />
-              <a
-                href="https://nextidea.dev"
-                title="Next Idea"
-                target="_blank"
-                className="text-blue-500 hover:text-blue-600 underline font-medium"
-              >
-                开源项目导航站：Next Idea
-              </a>
-              <span className="text-gray-600">
-                - 发现更多优质开源项目，帮助你找到副业启动项目
-              </span>
-            </div>
-            <div className="flex items-center space-x-2">
               <span className="text-yellow-600">🧩</span>
               <a
                 href="https://ntab.dev"
