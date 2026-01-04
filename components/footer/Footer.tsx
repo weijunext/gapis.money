@@ -42,12 +42,17 @@ const footerNavigation = {
     },
     {
       name: "OG Image Generator",
-      href: "https://ogimage.click/?utm_source=gap.weijunext.com",
+      href: "https://myogimage.com/?utm_source=gap.weijunext.com",
     },
     {
       name: "ChatHub",
       href: "https://app.chathub.gg/?ref=gapismoney",
       rel: "noopener noreferrer nofollow",
+    },
+    {
+      name: "First Look Tools",
+      href: "https://firstlook.tools/",
+      rel: "noopener noreferrer",
     },
   ],
 };
